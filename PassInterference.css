@@ -1,0 +1,254 @@
+html, body{
+    height:100%;
+    width:100%;
+}
+
+#startText {
+  font-size: 1.5em;
+  color: white;
+  text-align: left;
+}
+
+/*#tile1, #tile2, #tile3, #tile4, #tile5 {
+  text-align: center;
+  border: white solid 1px;
+  /*padding: 2px;*/
+  /*argin: 0;*/
+/*  font-weight: 700;
+  color: #0e2a56;
+  outline: none;
+}*/
+/**/
+
+.tileClass {
+  border: white solid 1px;
+  /*border: #122959 solid 5px;*/
+  width: 16.5%;
+  height: 85px;
+  margin: 0px 0px;
+  border-radius: 15px;
+  font-weight: 700;
+  outline: none;
+  text-align: center;
+  font-size: 2em;
+  color: #122959;
+}
+
+.fa-plus-square {
+  color: #cebf1a;
+  float: left;
+  font-size: 2em;
+  padding-top: 3.5%;
+}
+
+.tileClassTwo {
+  /*padding-left: 18px;*/
+  border: transparent; solid 1px;
+  /*border: #122959 solid 5px;*/
+  width: 19%;
+  height: 85px;
+  /*padding: 5px;*/
+  font-weight: 700;
+  outline: none;
+  text-align: center;
+  font-size: 2em;
+  float: left;
+  color: white;
+  background-color: #122959;
+}
+
+#divId2 {
+  padding-left: 13%;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari 
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+
+/*.divClass input[type=text]{
+  padding-left: 30px
+}
+*/
+/*.divClass {
+  position:relative;
+}
+
+.divClass i {
+  position:absolute;
+  right: 5px;
+  /*padding:9px 8px;*/
+/*  color: white;
+}*/
+
+/*.fas fa-dollar-sign {
+  color: red;
+}
+*/
+.btn.btn-primary {
+	color: #0e2a56;
+	background-color: #cebf1a;
+	border: none;
+  font-weight: 700;
+}
+
+.btn.btn-primary:hover {
+  color: #0e2a56;
+  background-color: white; #0e2a56;
+  border: none;
+  font-weight: 700;
+}
+
+
+.btn.btn-primary:not(:disabled):not(.disabled):focus {
+  color: #0e2a56;
+  background-color: #cebf1a;
+  outline: none !important;
+  box-shadow: none !important;
+  font-weight: 700;
+}
+
+.btn.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #6997be;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.container-fluid {
+  text-align: center;
+  height: 100%;
+}
+
+h1 {
+  font-size: 2px;
+}
+
+
+.row {
+  height: 100%;
+  /*background-color: gray;*/
+  /*background-image:url(https://www.tennisworldusa.org/imgb/65527/roger-federer-explains-why-he-created-the-laver-cup.jpg);*/
+}
+
+.rowHeight {
+  padding-top: 17%;
+ /* margin: 5px;*/
+}
+
+#leftRow {
+  background-image: url('../PassInterference2/css/money-500-650px.png');
+  background-size: cover;
+}
+
+#rightRow {
+  background-image: url('../PassInterference2/css/safety-box-blue.png');
+  background-size: cover;
+}
+
+.middleRow {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0e2a56;
+  border-left: white solid 20px;
+  border-right: white solid 20px;
+}
+
+.sideValue {
+  font-size: 5em;
+  color: rgba(18,41,89, 0.5);
+  /*background-color: #f4d909;*/
+  /*background-color: rgba(214, 180, 27, 0.5)*/
+  /*border: black solid 20px;*/
+}
+
+.textWord {
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+
+}
+
+.tileColor {
+	color: green;
+}
+
+.toggle-finished {
+	color: white;;
+}
+
+.toggle-correct {
+	color: #cebf1a;
+	font-weight: bold;
+	border: #cebf1a solid 3.5px;
+}
+
+.toggle-incorrect {
+	border: red solid 2px;
+	color: red;
+  font-weight: bold;
+}
+
+.clear {
+	border: black solid 0.5px;
+	color: black;
+}
+
+#formID2 {
+	display:none;
+}
+
+
+@media (max-width: 576px) {
+  #rightRow, #leftRow {
+    background-image: none;
+    background-color: #0e2a56;
+    font-style: white;
+  }
+  .middleRow {
+    border-left: #0e2a56 solid 1px;
+    border-right: #0e2a56 solid 1px;
+  }
+  .sideValue {
+    color: white;
+  }
+}
+
+
+.lightbox {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+        transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+ }
+
+.modal-copy {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 36rem;
+    border-radius: 0.5rem;
+}
+
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
