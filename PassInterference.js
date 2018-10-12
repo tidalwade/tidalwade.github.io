@@ -164,7 +164,6 @@ $('input[placeholder=""]').on("keypress", {
 	else {
 		console.log("this is an arrow key")
 	}
-	currentIndex = (currentIndex + 1)
 	var IDs2 = IDs[4];
 	var iNum = parseInt(IDs2);
 	var iNum2 = iNum + 1;
@@ -173,6 +172,7 @@ $('input[placeholder=""]').on("keypress", {
 	var iNum3 = iNum2.toString();
 	var iNum4 = "tile" + iNum3;
 	$("#" + iNum4.toString()).focus();
+	currentIndex = (currentIndex + 1)
 });
 
 // $('#tile6').focus();
