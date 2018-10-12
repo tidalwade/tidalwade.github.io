@@ -39,6 +39,8 @@ $("#startGame").on("click", function(f){
 	IntervId = setInterval(word, speed);
 	$("#tile1").focus();
 	$("#startPage").hide();
+	$(".mobileMoney").show();
+	$(".timeClass").show();
 });
 $("#moneyDrop").hide();
 $("#formID").hide();
@@ -48,8 +50,8 @@ $("#timer").hide();
 $("#nextGame").hide();
 $("#restart").hide();
 $("#skip").hide();
-// $(".mobileMoney").hide();
-$(".mobileTimer").hide();
+$(".mobileMoney").hide();
+$(".timeClass").hide();
 
 secretKey = "";
 
@@ -95,7 +97,6 @@ document.onkeydown = function(h) {
 };
 
 
-
 $('input[placeholder=""]').on("keypress", {
 	name: "Karl"
 }, function(e){
@@ -115,7 +116,16 @@ $('input[placeholder=""]').on("keypress", {
 		// console.log("this is y: " + y);
 		// y == 0;
 		console.log("correct");
+		var IDs2 = IDs[4];
+		var iNum = parseInt(IDs2);
+		var iNum2 = iNum + 1;
+		console.log(iNum2); 
+		console.log(IDs2);
+		var iNum3 = iNum2.toString();
+		var iNum4 = "tile" + iNum3;
     	$(this).val("");
+    	currentIndex = (currentIndex + 1)
+    	$("#" + iNum4.toString()).focus();
     	 // $(this).val($(this).val()+"");
     	this.classList.add("toggle-correct");
     	this.classList.remove("toggle-incorrect");
@@ -177,10 +187,9 @@ $("#moneyDrop").click(function() {
 $('input[placeholder="$"]').on("click", function(d){
 	// console.log($(this).attr('id'));
 	if(money > 0 && money < 74){
-		$('#funds').text("INNSUFFICENT FUNDS!!!")
-		$('#funds').fadeToggle("slow");
+		$('#funds').text("INNSUFFICENT FUNDS!!!").fadeToggle(1500);
 	}
-	$("#formID2").fadeToggle("slow");
+	$("#formID2").fadeToggle(1500);
 	count3 = 1;
 	for(i = 1; i < 6; i++){
 		var firstInput = $("#tile" + count3.toString()).attr("name");
@@ -266,6 +275,8 @@ $("#skip").on("click", function(e){
 
 function word(){
 	if(gameNumber < 3){
+		var timerTag = document.getElementsByClassName('timeClass');
+		timerTag[1].classList.remove("redAlert");
 		$('.timeClass').show();
 		var seconds = Math.floor(timerCount % 60)
 		if (seconds.toString().length == 1) {
@@ -274,7 +285,6 @@ function word(){
 		minute = (timerCount / 60);
 		var roundMinute = Math.floor(minute);
 		if(timerCount < 15){
-			var timerTag = document.getElementsByClassName('timeClass');
 			// timerTag[0].classList.add("redAlert");
 			timerTag[1].classList.add("redAlert");
 		}
@@ -349,11 +359,12 @@ function ifTrue(IDs, y){
 	    	tile4 = false;
 	    	tile5 = false;
 	    	currentIndex = 0;
-	    	// });
-
 	    	$(function() {
 	    		$("#tile1").focus();
     		});
+	    	timerTag[1].classList.remove("redAlert");
+	    	// });
+
 	    	// $('input[placeholder=""]').on("keypress", {
 	    	// 	name: "Karl"
 	    	// }, function(g){
