@@ -113,7 +113,6 @@ $('input[placeholder=""]').on("keypress", {
 	var y = x.toUpperCase();
 	console.log(y);
 	$(this).next().trigger("focus");
-	currentIndex = (currentIndex + 1)
 	if(placeHolder == y && IDs == secretKey){
 		// console.log("this is y: " + y);
 		// y == 0;
