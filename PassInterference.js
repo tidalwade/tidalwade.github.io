@@ -119,7 +119,6 @@ $('input[placeholder=""]').on("keypress", {
 	console.log(IDs2);
 	var iNum3 = iNum2.toString();
 	var iNum4 = "tile" + iNum3;
-	$("#" + iNum4.toString()).focus();
 	if(placeHolder == y && IDs == secretKey){
 		// console.log("this is y: " + y);
 		// y == 0;
@@ -173,6 +172,7 @@ $('input[placeholder=""]').on("keypress", {
 	else {
 		console.log("this is an arrow key")
 	}
+	$("#" + iNum4.toString()).focus();
 });
 
 // $('#tile6').focus();
