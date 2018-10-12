@@ -112,19 +112,11 @@ $('input[placeholder=""]').on("keypress", {
 	// console.log(e.key);
 	var y = x.toUpperCase();
 	console.log(y);
-	var IDs2 = IDs[4];
-	var iNum = parseInt(IDs2);
-	var iNum2 = iNum + 1;
-	console.log(iNum2); 
-	console.log(IDs2);
-	var iNum3 = iNum2.toString();
-	var iNum4 = "tile" + iNum3;
 	if(placeHolder == y && IDs == secretKey){
 		// console.log("this is y: " + y);
 		// y == 0;
 		console.log("correct");
     	$(this).val("");
-    	currentIndex = (currentIndex + 1)
     	 // $(this).val($(this).val()+"");
     	this.classList.add("toggle-correct");
     	this.classList.remove("toggle-incorrect");
@@ -172,6 +164,14 @@ $('input[placeholder=""]').on("keypress", {
 	else {
 		console.log("this is an arrow key")
 	}
+	currentIndex = (currentIndex + 1)
+	var IDs2 = IDs[4];
+	var iNum = parseInt(IDs2);
+	var iNum2 = iNum + 1;
+	console.log(iNum2); 
+	console.log(IDs2);
+	var iNum3 = iNum2.toString();
+	var iNum4 = "tile" + iNum3;
 	$("#" + iNum4.toString()).focus();
 });
 
