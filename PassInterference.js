@@ -112,6 +112,8 @@ $('input[placeholder=""]').on("keypress", {
 	// console.log(e.key);
 	var y = x.toUpperCase();
 	console.log(y);
+	$(this).next().trigger("focus");
+	currentIndex = (currentIndex + 1)
 	if(placeHolder == y && IDs == secretKey){
 		// console.log("this is y: " + y);
 		// y == 0;
@@ -164,15 +166,15 @@ $('input[placeholder=""]').on("keypress", {
 	else {
 		console.log("this is an arrow key")
 	}
-	var IDs2 = IDs[4];
-	var iNum = parseInt(IDs2);
-	var iNum2 = iNum + 1;
-	console.log(iNum2); 
-	console.log(IDs2);
-	var iNum3 = iNum2.toString();
-	var iNum4 = "tile" + iNum3;
-	$("#" + iNum4.toString()).focus();
-	currentIndex = (currentIndex + 1)
+	// var IDs2 = IDs[4];
+	// var iNum = parseInt(IDs2);
+	// var iNum2 = iNum + 1;
+	// console.log(iNum2); 
+	// console.log(IDs2);
+	// var iNum3 = iNum2.toString();
+	// var iNum4 = "tile" + iNum3;
+	// $("#" + iNum4.toString()).focus();
+	// currentIndex = (currentIndex + 1)
 });
 
 // $('#tile6').focus();
