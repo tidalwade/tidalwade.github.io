@@ -48,7 +48,7 @@ $("#timer").hide();
 $("#nextGame").hide();
 $("#restart").hide();
 $("#skip").hide();
-$(".mobileMoney").hide();
+// $(".mobileMoney").hide();
 $(".mobileTimer").hide();
 
 secretKey = "";
@@ -199,7 +199,7 @@ $('input[placeholder="$"]').on("click", function(d){
 			tag.classList.add("toggle-correct");
 			// $('input[id="tile1"]').classList.add("toggle-correct");
 			money = money - 75;
-			$("#money").text("$ " + money);
+			$(".mobileMoney").text("$ " + money);
 			console.log(inputID2);
 			if(inputID2 == 'money1'){
 				tile1 = true;
@@ -266,26 +266,33 @@ $("#skip").on("click", function(e){
 
 function word(){
 	if(gameNumber < 3){
-		$('#timer').show();
+		$('.timeClass').show();
 		var seconds = Math.floor(timerCount % 60)
 		if (seconds.toString().length == 1) {
 	            seconds = "0" + seconds;
 	        }
 		minute = (timerCount / 60);
 		var roundMinute = Math.floor(minute);
+		if(timerCount < 15){
+			var timerTag = document.getElementsByClassName('timeClass');
+			// timerTag[0].classList.add("redAlert");
+			timerTag[1].classList.add("redAlert");
+		}
 		if(timerCount < 1){
 			clearInterval(IntervId);
 			toggleModal();
-			$('#timer').text("Time is up!!!");
+			// $('#timer').text("Time is up!!!");
 			$("#restart").show();
 			$("#skip").show();
 	    	clearInterval(IntervId);
 	    	speed = 1000;
 	    	timerCount = 30;
+	    	// timerTag[0].classList.remove("redAlert");
+			timerTag[1].classList.remove("redAlert");
 		}
 		else {
 			// console.log(timerCount + " seconds have passed");
-	        $('#timer').text(roundMinute + ":" + seconds);
+	        $('.timeClass').text(roundMinute + ":" + seconds);
 		}
 		timerCount--;
 	}
@@ -305,12 +312,12 @@ function ifTrue(IDs, y){
 		// x = "";
 		// console.log(y);
 		// document.getElementById('tile1').focus()
-		$('#timer').hide();
+		$('.timeClass').hide();
 		clearInterval(IntervId);
 		speed = 1000;
 		timerCount = 30;
 		money = money + 100
-		$("#money").text("$ " + money);
+		$(".mobileMoney").text("$ " + money);
 	//   	minute = 0;
 		// seconds = 0;
 		if(gameNumber == 3){
