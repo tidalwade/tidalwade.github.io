@@ -24,6 +24,10 @@ html, body{
 
 }
 
+#funds {
+  color: white;
+}
+
 .mobileMoney {
   color: transparent;
   float: left;
@@ -87,17 +91,17 @@ html, body{
   padding-left: 13%;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari 
-  color: white;
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #cebf1a;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: white;
+  color: #cebf1a;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: white;
+  color: #cebf1a;
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: white;
+  color: #cebf1a;
 }
 
 
@@ -226,6 +230,10 @@ h1 {
   color: red;
 }
 
+#correct {
+  color: white;
+}
+
 .clear {
 	border: black solid 0.5px;
 	color: black;
@@ -255,16 +263,29 @@ h1 {
     font-size: 1em;
   }
 
+  #gameTitle {
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+  }
+
+  .tileClass {
+    height: 60px;
+    font-size: 1.5em;
+  }
+/**/
   .mobileMoney {
   color: white;
   float: left;
-  padding-left: 20%;
+  padding-left: 10%;
+  padding-top: 10%;
   }
 
   .timeClass {
   color: white;
   float: right;
-  padding-right: 20%;
+  padding-right: 10%;
+  padding-top: 10%;
   }
 }
 
