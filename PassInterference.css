@@ -171,12 +171,12 @@ h1 {
 }
 
 #leftRow {
-  background-image: url('../PassInterference2/css/money-500-650px.png');
+  background-image: url('https://github.com/tidalwade/tidalwade.github.io/blob/master/money-500-650px.png');
   background-size: cover;
 }
 
 #rightRow {
-  background-image: url('../PassInterference2/css/safety-box-blue.png');
+  background-image: url('https://github.com/tidalwade/tidalwade.github.io/blob/master/safety-box-blue.png');
   background-size: cover;
 }
 
