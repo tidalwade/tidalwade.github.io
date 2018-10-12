@@ -112,10 +112,10 @@ $('input[placeholder=""]').on("keypress", {
 	// console.log(e.key);
 	var y = x.toUpperCase();
 	console.log(y);
-	// if(jQuery(window).width() > 768) {
-	$(this).next().trigger("focus");
-	currentIndex = (currentIndex + 1)
-	// }
+	if(jQuery(window).width() > 768) {
+		$(this).next().trigger("focus");
+		currentIndex = (currentIndex + 1)
+	}
 	if(placeHolder == y && IDs == secretKey){
 		// console.log("this is y: " + y);
 		// y == 0;
