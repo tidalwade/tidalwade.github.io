@@ -8,7 +8,7 @@ var game = [
     password: ["R", "I","C", "H", 3, 3]
   },
   {
-    clue: "Tunred 33 this February",
+    clue: "Turned 33 this February",
     password: [0, 2, 1, 9, 8, 5]
   },
   {
