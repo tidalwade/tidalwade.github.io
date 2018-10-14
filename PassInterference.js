@@ -1,15 +1,44 @@
 var game = [
   {
-    clue: "Bob is 33 years old",
-    password: ["B", "O","B", 3, 3]
+    clue: "His name is Rich Smith",
+    password: ["R", "S","M", "I", "T","H"]
   }, 
   {
-    clue: "He's not John, Paul or George",
-    password: ["R", "I","N", "G", "O"]
+    clue: "He is 33 years old",
+    password: ["R", "I","C", "H", 3, 3]
   },
   {
-    clue: "He's a Vietnam vet looking for vengeance",
-    password: ["R", "A","M", "B", "O"]
+    clue: "Tunred 33 this February",
+    password: [0, 2, 1, 9, 8, 5]
+  },
+  {
+    clue: "SS # is 242 34 7879",
+    password: ["R", "S",7, 8, 7, 9]
+  },
+  {
+    clue: "Raised in Michigan, but moved to Los Angeles",
+    password: ["M", "I","T", "O", "L", "A"]
+  },
+  {
+    clue: "He is a universal blood donor",
+    password: ["T", "Y","P", "E", "O", "-"]
+  },
+  {
+    clue: "His sign",
+    password: ["P", "I","S", "C", "E", "S"]
+  },
+  {
+    clue: "His Zodiac symbol",
+    password: ["F", "I","S", "H", 8, 5]
+  },
+  {
+    clue: "Has an itch for the amount of time until he is over the hill",
+    password: ["7", "Y","E", "A", "R", "S"]
+  },
+  {
+    clue: "Year he graduated college",
+    password: ["G", "R", "A", "D", 0, 7]
+
   }]
 
 $("#correct").hide();
@@ -80,6 +109,11 @@ select5.addEventListener("keypress", function() {
 	secretKey = select5.id;
 });
 
+var select6 = document.getElementById('tile6');
+select6.addEventListener("keypress", function() {
+	secretKey = select6.id;
+});
+
 
 var elements = document.getElementsByClassName("arrow-togglable");
 var currentIndex = 0;
@@ -148,6 +182,11 @@ $('input[placeholder=""]').on("keypress", {
     	else if(IDs == 'tile5'){
     		tile5  = true;
     		console.log(IDs + " is true!")
+    	}	
+
+    	else if(IDs == 'tile6'){
+    		tile6  = true;
+    		console.log(IDs + " is true!")
     	}		
     	    	// $('#hiddenButton').focus();
 		// $('#hiddenButton').on("keypress", function(j) {
@@ -195,7 +234,7 @@ $('input[placeholder="$"]').on("click", function(d){
 	}
 	$("#formID2").fadeToggle(1500);
 	count3 = 1;
-	for(i = 1; i < 6; i++){
+	for(i = 1; i < 7; i++){
 		var firstInput = $("#tile" + count3.toString()).attr("name");
 		var label1 = $("#tile" + count3.toString()).attr("alt");
 		var id3 = $("#tile" + count3.toString()).attr("id");
@@ -228,6 +267,9 @@ $('input[placeholder="$"]').on("click", function(d){
 			}
 			else if(inputID2 == 'money5'){
 				tile5 = true;
+			}
+		    else if(inputID2 == 'money6'){
+				tile6 = true;
 			}
 			else {
 				console.log("Nothing is true");
@@ -273,12 +315,13 @@ $("#skip").on("click", function(e){
 	tile3 = false;
 	tile4 = false;
 	tile5 = false;
+	tile6 = false;
 	currentIndex = 0;
 	$("#tile1").focus();
 });
 
 function word(){
-	if(gameNumber < 3){
+	if(gameNumber < 10){
 		var timerTag = document.getElementsByClassName('timeClass');
 		timerTag[1].classList.remove("redAlert");
 		$('.timeClass').show();
@@ -314,7 +357,7 @@ function word(){
 
 
 function ifTrue(IDs, y){
-	if(tile1 == true && tile2 == true && tile3 == true && tile4 == true && tile5 == true){
+	if(tile1 == true && tile2 == true && tile3 == true && tile4 == true && tile5 == true && tile6 == true){
 		// var dawg = $("#" + IDs).("");
 		// $("#" + IDs).attr('placeholder','Some New Text');
 		// console.log(dawg);
@@ -334,7 +377,7 @@ function ifTrue(IDs, y){
 		$(".mobileMoney").text("$ " + money);
 	//   	minute = 0;
 		// seconds = 0;
-		if(gameNumber == 3){
+		if(gameNumber == 10){
 			$("#correct").text("YOU ARE A WINNER!");
 			$("#correct").show();
 		}
@@ -362,6 +405,7 @@ function ifTrue(IDs, y){
 	    	tile3 = false;
 	    	tile4 = false;
 	    	tile5 = false;
+	    	tile6 = false;
 	    	currentIndex = 0;
 	    	$(function() {
 	    		$("#tile1").focus();
