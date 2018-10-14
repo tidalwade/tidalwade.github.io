@@ -53,8 +53,8 @@ html, body{
 .tileClass {
   border: white solid 1px;
   /*border: #122959 solid 5px;*/
-  width: 16.5%;
-  height: 85px;
+  width: 14.5%;
+  height: 75px;
   margin: 0px 0px;
   border-radius: 15px;
   font-weight: 700;
@@ -75,7 +75,7 @@ html, body{
   /*padding-left: 18px;*/
   border: transparent; solid 1px;
   /*border: #122959 solid 5px;*/
-  width: 19%;
+  width: 16%;
   height: 85px;
   /*padding: 5px;*/
   font-weight: 700;
@@ -88,7 +88,7 @@ html, body{
 }
 
 #divId2 {
-  padding-left: 13%;
+  padding-left: 11%;
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -183,6 +183,7 @@ h1 {
   background-image: url('https://tidalwade.github.io/safety-box-blue.png');
   background-size: cover;
 }
+
 
 .middleRow {
   font-family: 'Poppins', sans-serif;
