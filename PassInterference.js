@@ -1,11 +1,11 @@
 var game = [
   {
-    clue: "His name is Rich Smith",
-    password: ["R", "S","M", "I", "T","H"]
+    clue: "His name is Hyde Blank",
+    password: ["H", "B","L", "A", "N","K"]
   }, 
   {
     clue: "He is 33 years old",
-    password: ["R", "I","C", "H", 3, 3]
+    password: ["H", "Y","D", "E", 3, 3]
   },
   {
     clue: "Turned 33 this February",
@@ -13,7 +13,7 @@ var game = [
   },
   {
     clue: "SS # is 242 34 7879",
-    password: ["R", "S",7, 8, 7, 9]
+    password: ["H", "B",7, 8, 7, 9]
   },
   {
     clue: "Raised in Michigan, but moved to Los Angeles",
@@ -45,7 +45,7 @@ $("#correct").hide();
 
 gameNumber = 0;
 var speed = 1000;
-var timerCount = 30;
+var timerCount = 45;
 var minute = 0;
 var seconds = 0;
 var money = 100;
@@ -79,8 +79,10 @@ $("#timer").hide();
 $("#nextGame").hide();
 $("#restart").hide();
 $("#skip").hide();
+$("#continue").hide();
 $(".mobileMoney").hide();
 $(".timeClass").hide();
+$('#funds').hide();
 
 secretKey = "";
 
@@ -146,6 +148,7 @@ $('input[placeholder=""]').on("keypress", {
 	// console.log(e.key);
 	var y = x.toUpperCase();
 	console.log(y);
+	$('#funds').hide();
 	if(placeHolder == y && IDs == secretKey){
 		// console.log("this is y: " + y);
 		// y == 0;
@@ -195,8 +198,9 @@ $('input[placeholder=""]').on("keypress", {
     	ifTrue(IDs, y);
 	}
 	else if(e.key !== "ARROWLEFT" || e.key !== "ARROWRIGHT"){
+		//Javascript
 		console.log("incorrect");
-		this.classList.toggle("toggle-incorrect");
+		this.classList.add("toggle-incorrect");
 		console.log(e.key);
 		$(this).val("");
 		clearInterval(IntervId);
@@ -230,7 +234,7 @@ $("#moneyDrop").click(function() {
 $('input[placeholder="$"]').on("click", function(d){
 	// console.log($(this).attr('id'));
 	if(money > 0 && money < 74){
-		$('#funds').text("INNSUFFICENT FUNDS!!!").fadeToggle(1500);
+		$('#funds').show();
 	}
 	$("#formID2").fadeToggle(1500);
 	count3 = 1;
@@ -282,21 +286,46 @@ $('input[placeholder="$"]').on("click", function(d){
 
 
 $("#restart").on("click", function(e){
-	$('#timer').text("Let's try this again!");
 	$("input").val("");
 	$('input').removeClass("toggle-correct");
 	$('input').removeClass("toggle-incorrect");
 	IntervId = setInterval(word, speed);
 	$("#restart").hide();
 	$("#skip").hide();
+	$("#continue").hide();
 	currentIndex = 0;
 	$("#tile1").focus();
 });
 
 $("#skip").on("click", function(e){
 	gameNumber++
-	$('#timer').text("Let's move on!");
 	$("#restart").hide();
+	$("#skip").hide();
+	$("#continue").hide();
+	$("input").val("");
+	$('input').removeClass("toggle-correct");
+	$('input').removeClass("toggle-incorrect");
+	IntervId = setInterval(word, speed);
+	document.querySelector('h2').textContent = game[gameNumber].clue
+	count = 1;
+	game[gameNumber].password.forEach(function(newTurn){
+		var newTile = document.getElementById('tile' + count.toString());
+		newTile.name = newTurn
+		count ++;
+		console.log(gameNumber);
+	});
+	tile1 = false;
+	tile2 = false;
+	tile3 = false;
+	tile4 = false;
+	tile5 = false;
+	tile6 = false;
+	currentIndex = 0;
+	$("#tile1").focus();
+});
+
+$("#continue").on("click", function(e){
+	$("#continue").hide();
 	$("#skip").hide();
 	$("input").val("");
 	$('input').removeClass("toggle-correct");
@@ -319,6 +348,7 @@ $("#skip").on("click", function(e){
 	currentIndex = 0;
 	$("#tile1").focus();
 });
+
 
 function word(){
 	if(gameNumber < 10){
@@ -343,7 +373,7 @@ function word(){
 			$("#skip").show();
 	    	clearInterval(IntervId);
 	    	speed = 1000;
-	    	timerCount = 30;
+	    	timerCount = 45;
 	    	// timerTag[0].classList.remove("redAlert");
 			timerTag[1].classList.remove("redAlert");
 		}
@@ -364,6 +394,7 @@ function ifTrue(IDs, y){
 		console.log("Correct Answer!!!!");
 		gameNumber++
 		console.log(gameNumber);
+		var FIREFOX = /Firefox/i.test(navigator.userAgent);
 		// console.log(this);
 		// console.log(x);
 		// x = "";
@@ -372,7 +403,7 @@ function ifTrue(IDs, y){
 		$('.timeClass').hide();
 		clearInterval(IntervId);
 		speed = 1000;
-		timerCount = 30;
+		timerCount = 45;
 		money = money + 100
 		$(".mobileMoney").text("$ " + money);
 	//   	minute = 0;
@@ -380,6 +411,10 @@ function ifTrue(IDs, y){
 		if(gameNumber == 10){
 			$("#correct").text("YOU ARE A WINNER!");
 			$("#correct").show();
+		}
+		else if(FIREFOX){
+			$("#continue").show();
+			console.log("firefox!!!")
 		}
 		else {
 			console.log("The ID is " + IDs);
@@ -440,6 +475,7 @@ function toggleModal() {
     modal.classList.toggle("show-modal");
 }
 
+
 // function windowOnClick(event) {
 //     if (event.target === modal) {
 //         toggleModal();
@@ -449,4 +485,3 @@ function toggleModal() {
 // trigger.addEventListener("click", toggleModal);
 restartButton.addEventListener("click", toggleModal);
 skipButton.addEventListener("click", toggleModal);
-// window.addEventListener("click", windowOnClick);
