@@ -10,7 +10,6 @@ html, body{
 }
 
 #startPage {
-  padding-left: 50px;
 }
 
 #gameTitle {
@@ -171,6 +170,7 @@ h1 {
 
 .rowHeight {
   padding-top: 17%;
+  height: 100%;
  /* margin: 5px;*/
 }
 
@@ -194,8 +194,8 @@ h1 {
 
 .sideValue {
   font-size: 5em;
-  color: rgba(18,41,89, 0.5);
-  /*background-color: #f4d909;*/
+  color: white;
+  color: rgba(18,41,89, 1);
   /*background-color: rgba(214, 180, 27, 0.5)*/
   /*border: black solid 20px;*/
 }
@@ -265,16 +265,15 @@ h1 {
   }
 
   #gameTitle {
-  font-size: 1.75em;
+  font-size: 2.5em;
   color: white;
   text-align: center;
   }
 
   .tileClass {
     height: 50px;
-    font-size: 1em;
+    font-size: 1.5em;
     width: 12.5%;
-    font-weight: 400;
   }
 /**/
   .mobileMoney {
@@ -324,3 +323,4 @@ h1 {
     transform: scale(1.0);
     transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
+
