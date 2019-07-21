@@ -1,0 +1,143 @@
+<!-- =============== START CTA - CTA2 (DONATION ARRAY) ================== -->
+
+{% if demo %}
+<h2 class="demo">CTA 2</h2>
+<p class="demo">This is a donation array.</p>
+{% endif %}
+
+<table role="presentation" dir="ltr" cellpadding="0" cellspacing="0" border="0" width="100%" class="message-body">
+  <tr>
+    <td class="reset" >
+      <!--[if (gte mso 9)|(IE)]>
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+      <td width="275" valign="top" style="padding: 0;" >
+      <![endif]-->
+      <div class="two-column-1 message-body">
+        <table role="presentation" align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0" class="message-body message-body-cta">
+          <tr>
+            <td align="center">
+              <!-- CTA Button -->
+              <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center">
+                    <a href="{{ donArrayAmtLink1 }}">{{ donArrayAmtText1 }}</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td><td width="275" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      <div class="two-column-2 message-body">
+        <table role="presentation" align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0" class="message-body message-body-cta">
+          <tr>
+            <td align="center">
+              <!-- CTA Button -->
+              <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center">
+                    <a href="{{ donArrayAmtLink2 }}">{{ donArrayAmtText2 }}</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </td>
+  </tr>
+</table>
+
+<!-- ======= END TWO COLUMN (LEFT TO RIGHT STACK) ======= -->
+
+<!-- ======= START TWO COLUMN (RIGHT TO LEFT STACK) ======= -->
+
+<table role="presentation" dir="ltr" cellpadding="0" cellspacing="0" border="0" width="100%" class="cta2">
+  <tr>
+    <td class="reset" >
+      <!--[if (gte mso 9)|(IE)]>
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+      <tr>
+      <td width="275" valign="top" style="padding: 0;" >
+      <![endif]-->
+      <div class="two-column-1 message-body">
+        <table role="presentation" align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0" class="message-body message-body-cta">
+          <tr>
+            <td align="center">
+              <!-- CTA Button -->
+              <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center">
+                    <a href="{{ donArrayAmtLink3 }}">{{ donArrayAmtText3 }}</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td><td width="275" valign="top" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      <div class="two-column-2 message-body">
+        <table role="presentation" align="center" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0" class="message-body message-body-cta">
+          <tr>
+            <td align="center">
+              <!-- CTA Button -->
+              <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center">
+                    <a href="{{ donArrayAmtLink4 }}">{{ donArrayAmtText4 }}</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </td>
+  </tr>
+</table>
+
+<!-- ======= END TWO COLUMN (LEFT TO RIGHT STACK) ======= -->
+
+<!--[if (gte mso 9)|(IE)]>
+<table role="presentation" align="center" bgcolor="#ffffff" width="350" border="0" cellspacing="0" cellpadding="0" style="padding: 30px; background: #ffffff;">
+<tr>
+<td width="350" align="center" style="padding: 0; background: #ffffff;">
+<![en30f]-->
+<table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="message-body message-body-cta cta2">
+  <tr>
+    <td align="center" style="padding-top: 15px;">
+      <!-- CTA Button -->
+      <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center">
+            <a href="{{ donArrayAmtLink5 }}">{{ donArrayAmtText5 }}</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+
+<!-- =============== START CTA - CTA2 (DONATION ARRAY) ================== -->

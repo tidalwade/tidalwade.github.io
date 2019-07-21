@@ -1,0 +1,74 @@
+// GCFD
+
+/*------------------------------------*\
+  GCFD - LAYOUT
+\*------------------------------------*/
+
+$max-email-width: 600px;
+
+$message-body-padding: 40px 25px;
+$message-body-spacing-padding: 30px 0 0;
+$message-body-spacing-padding-top-only: 30px;
+
+$header-logo-width: 166px;
+$header-logo-width-2: 100px;
+
+$footer-logo-width: 279px;
+
+// message body divided by 2
+$two-column-equal-width-max-width: 275px;
+
+/*------------------------------------*\
+  GCFD - MAIN THEME
+\*------------------------------------*/
+
+$bg-color: #ebebeb;
+
+$snippet-font-color: #5f5e5e;
+$snippet-font-size: 14px;
+$snippet-font-line-height: 18px;
+
+$header-bg-color: #215732;
+$header-border-top: none;
+$header-border-bottom: none;
+$header-cta-bg-color: #e87722;
+$header-cta-bg-color-hover: #e87722 !important;
+$header-cta-radius: 0;
+
+$hero-bg-color: #ffffff;
+
+$body-bg-color: #ffffff;
+
+$message-body-cta-bg-color: #e87722;
+$message-body-cta-bg-color-hover: #e87722 !important;
+$message-body-cta-radius: 0;
+
+$footer-bg-color: #215732;
+$footer-4-border: 23px solid #e87722;
+$footer-5-darker-bg-color: #2e043b;
+$footer-utility-links-bg-color: #ebebeb;
+
+/*------------------------------------*\
+	GCFD - TYPOGRAPHY
+\*------------------------------------*/
+
+$snippet-font: Calibri, Helvetica, Arial, sans-serif;
+$snippet-font-link-color-hover: #215633 !important;
+
+$h1-font: 'Flama', Calibri, Helvetica, Arial, sans-serif;
+$h2-font: 'Flama', Calibri, Helvetica, Arial, sans-serif;
+$h3-font: 'Flama', Calibri, Helvetica, Arial, sans-serif;
+
+$message-body-font: Calibri, Helvetica, Arial, sans-serif;
+$message-body-font-color: #5f5e5e;
+$message-body-font-size: 16px;
+$message-body-font-line-height: 24px;
+
+$message-body-font-link-color: #215633;
+$message-body-font-link-color-hover: #215633 !important;
+
+$cta-font: 'Flama', Calibri, Helvetica, Arial, sans-serif;
+$cta-font-size: 16px;
+
+$footer-utility-links-font-size: 14px;
+$footer-utility-links-line-height: 18px;

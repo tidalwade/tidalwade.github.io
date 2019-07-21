@@ -1,0 +1,21 @@
+<html>
+<head>
+
+{% include "./components/meta.nunjucks" %}
+
+{% include "./components/schema.nunjucks" %}
+
+<style type="text/css">{% include "./../../../build/css/embedded.css" %}</style>
+
+<link rel="stylesheet" href="css/inline.css"> 
+
+{% include "./components/fonts.nunjucks" %}
+
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+
+</head>

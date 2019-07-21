@@ -1,0 +1,98 @@
+{# =========================================
+FOOTER - v5 (ONE COLUMN - MULTI COLORED)
+========================================= #}
+
+<!-- ======= START FOOTER ======= -->
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="footer 5 blurb">
+  <tr>
+    <td align="center">
+      <h2>100<span>%</span></h2>&nbsp;&nbsp;<h3>Goes to<br>Research</h3>
+      <p>Space for blurb. Lorem Ipsum dolor sit amet, consectetur elit, sed do tempor incidudunt ut labore et.</p>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" class="footer 5 h2">
+  <tr>
+    <td align="center">
+      <h2>CONNECT WITH US</h2>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" class="social-media footer 5">
+  <tr>
+    <td align="center">
+      <table role="presentation" align="center" cellpadding="0" cellspacing="0" >
+        <tr>
+          <td align="center">
+            <a href="{{ facebookLink }}">
+              <img align="center" src="{{ facebookIcon }}" align="center" alt="Facebook"/>
+            </a>
+          </td>
+          <td align="center">
+            <a href="{{ twitterLink }}">
+              <img align="center" src="{{ twitterIcon }}" align="center" alt="Twitter"/>
+            </a>
+          </td>
+          <td align="center">
+            <a href="{{ youtubeLink }}">
+              <img align="center" src="{{ youtubeIcon }}" align="center" alt="YouTube"/>
+            </a>
+          </td>
+          <td align="center">
+            <a href="{{ instagramLink }}">
+              <img align="center" src="{{ instagramIcon }}" align="center" alt="Instagram"/>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" class="footer 5 h2 hashtag">
+  <tr>
+    <td align="center">
+      <h2><span>#</span>RideToEndALZ</h2>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="footer 5 address">
+  <tr>
+    <td align="center" >
+      <a href="{{ logoLink }}">
+        <img src="{{ footerLogoImage }}" class="img-footer-logo-width" srcset="{% block footer_logo_img_url_srcset %}{% endblock %}" width="{{ footerLogoWidth }}" alt="{{ logoAltText }}" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" >
+      <span>
+        <a href="tel:1-{{ organizationPhone }}" >1-{{ organizationPhone }}</a><br>
+        {{ organizationName }} Home Office, <a>{{ organizationStreet }}, {{ organizationCity }}, {{ organizationState }}, {{ organizationZip }}</a>
+        <p class="disclaimer">
+          {{ organizationName }} is a not-for-profit 501(c)(3) organization.<br>
+          Copyright &copy; [[S9:pattern:yyyy]] {{ organizationName }}&reg;. All rights reserved.
+        </p>
+      </span>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="footer 5 footer-utility-links">
+  <tr>
+    <td >
+      <span>
+        <a target="_blank" href="{{ utilityLinkContact }}">Contact Us</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        <a target="_blank" href="{{ utilityLinkPrivacy }}">Privacy Policy</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        <a target="_blank" href="{{ utilityLinkUnsubscribe }}">Unsubscribe</a><span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        <a target="_blank" href="{{ utilityLinkViewOnline }}">View Online</a>
+      </span>
+    </td>
+  </tr>
+</table>
+
+<!-- ======= END FOOTER ======= -->

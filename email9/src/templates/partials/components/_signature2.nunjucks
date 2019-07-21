@@ -1,0 +1,25 @@
+<!-- ======= START SIGNATURE 2 (ONE COLUMN) ======= -->
+
+{% if demo %}
+<h2 class="demo">SIGNATURE 2</h2>
+<p class="demo">This is a signature that displays with a headshot only.</p>
+<hr style="margin-bottom: 20px">
+{% endif %}
+
+<table role="presentation" bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0" class="signature 2">
+  <tr>
+    <!-- Signature -->
+    <td align="left" valign="middle">
+      <img src="{{ signatureHeadshot }}" width="91" alt="{{ signatureHeadshotAltText }}">
+    </td>
+    <td align="left" valign="middle" >
+    {{ signatureSalutation }}
+    <br>
+    {# <img width="140" src="{{ signatureImage }}" alt="{{ signatureImageAltText }}"> #}
+    <br>
+    <strong style="line-height: 18px">{{ signatureName }}</strong><br><span style="line-height: 18px">{{ signatureTitle }}</span><br><span style="line-height: 18px">{{ signatureTitle2 }}</span></td>
+  </tr>
+</table>
+
+<!-- ======= END SIGNATURE 2 (ONE COLUMN) ======= -->
+

@@ -1,0 +1,22 @@
+<!-- ======= START SIGNATURE 3 (ONE COLUMN) ======= -->
+
+{% if demo %}
+<h2 class="demo">SIGNATURE 3</h2>
+<p class="demo">This is a signature that displays with a signature image only.</p>
+<hr style="margin-bottom: 20px">
+{% endif %}
+
+<p>With gratitude,</p>
+
+<table role="presentation" border="0" cellspacing="0" cellpadding="0" class="signature 3">
+  <tr>
+    <!-- Signature -->
+    <td align="left" valign="middle">
+      <img src="{{ signatureImage }}" width="195" alt="{{ signatureImageAltText }}">
+    </td>
+  </tr>
+</table>
+
+<p>{{ signatureName }}<br>{{ signatureTitle }}<br>{{ signatureTitle2 }}</p>
+
+<!-- ======= END SIGNATURE 3 (ONE COLUMN) ======= -->

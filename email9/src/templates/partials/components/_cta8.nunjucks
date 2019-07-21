@@ -1,0 +1,36 @@
+<!-- ======= START CTA - CTA8 - BUTTON WITH ICON (ONE COLUMN) ======= -->
+
+{% if demo %}
+<h2 class="demo">CTA 8</h2>
+<p class="demo">This is a CTA button that displays with an icon.</p>
+{% endif %}
+
+<table class="cta8" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+
+      <!-- CTA Button -->
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="middle" align="center">
+            <div>
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ messageBodyButtonLink }}" style="height:62px;v-text-anchor:middle;width:{{outlookButtonWidth}};" arcsize="20%" strokecolor="{{$message-body-cta-bg-color}}" fillcolor="{{$message-body-cta-bg-color}}">
+              <w:anchorlock/>
+              <center style="color:#ffffff;font-family:{{$cta-font}};font-size:{{$cta-font-size}}">{{ messageBodyButtonText }}</center>
+              </v:roundrect>
+              <![endif]-->
+              <a href="{{ messageBodyButtonLink }}">{{ messageBodyButtonText }}</a>
+            </div>
+          </td>
+          <td valign="middle" align="center">
+            <img width="32" src="https://secure2.convio.net/rcf/images/content/pagebuilder/gift-graphic.png" alt="Gift Icon">
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+<!-- ======= END CTA - CTA8 - BUTTON WITH ICON (ONE COLUMN) ======= -->

@@ -1,0 +1,62 @@
+{# =========================================
+  FOOTER - v1 (ONE COLUMN)
+========================================= #}
+
+<!-- ======= START FOOTER ======= -->
+
+<table role="presentation" class="one-column footer 1" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="center" class="footer-padding">
+      <a href="{{ logoLink }}" style="border: 0; display: block; text-decoration: none;">
+        <img src="{{ footerLogoImage }}" class="img-footer-logo-width" srcset="{% block footer_logo_img_url_srcset %}{% endblock %}" width="320" alt="{{ logoAltText }}" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" class="social-media footer">
+  <tr>
+    <td align="center" class="appleFooter">
+      <table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" >
+        <tr>
+          <td align="center" class="appleFooter">
+            <a href="{{ facebookLink }}">
+              <img align="center" width="31" src="{{ facebookIcon }}" align="center" alt="Facebook"/>
+            </a>
+          </td>
+          <td align="center" class="appleFooter">
+            <a href="{{ instagramLink }}">
+              <img align="center" width="31" src="{{ instagramIcon }}" align="center" alt="Instagram"/>
+            </a>
+          </td>
+          <td align="center" class="appleFooter">
+            <a href="{{ youtubeLink }}">
+              <img align="center" width="31" src="{{ youtubeIcon }}" align="center" alt="YouTube"/>
+            </a>
+          </td>
+          <td align="center" class="appleFooter">
+            <a href="{{ twitterLink }}">
+              <img align="center" width="31" src="{{ twitterIcon }}" align="center" alt="Twitter"/>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="footer-utility-links">
+  <tr>
+    <td class="appleFooter footer-utility-links">
+      <a target="_blank" href="{{ utilityLinkUnsubscribe }}">Unsubscribe</a>
+      <span class="mobile-hide">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <a target="_blank" href="{{ utilityLinkViewOnline }}">View Online</a>
+      <span class="mobile-hide">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <a target="_blank" href="{{ utilityLinkVisitWebsite }}">Visit Website</a>
+      <span class="mobile-hide">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <a target="_blank" href="{{ utilityLinkContact }}">Contact Us</a>
+      <span class="mobile-hide">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <a target="_blank" href="{{ utilityLinkForward }}">Forward</a>
+    </td>
+  </tr>
+</table>

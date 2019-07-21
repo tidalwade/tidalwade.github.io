@@ -1,0 +1,47 @@
+<!-- ================ START CTA BUTTON - CTA6 (BUTTON WITH BACKGROUND) ================ -->
+
+{% if demo %}
+<h2 class="demo">CTA 12</h2>
+<p class="demo">This can be combined with other CTAs for a cohesive background look.</p>
+{% endif %}
+
+<!--[if (gte mso 9)|(IE)]>
+<table role="presentation" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" style="padding-top: 30px">
+<![endif]-->
+<table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="message-body message-body-cta cta12">
+  <tr>
+    <td align="center" class="border-top">
+      <!-- CTA Button -->
+      <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center">
+            <p>{{ organizationName }}</p>
+            <h1>{{ cta12heading }}</h1>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" class="cta-button">
+            <div style="margin: 0; padding: 0; background: #e87722">
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ messageBodyButtonLink }}" style="height:56px;v-text-anchor:middle;width:370;" arcsize="0" strokecolor="#e87722" fillcolor="#e87722">
+              <w:anchorlock/>
+              <center style="color:#ffffff;font-family:Calibri, Arial;font-size:16px;">{{ messageBodyButtonText }}</center>
+              </v:roundrect>
+              <![endif]-->
+              <a href="{{ messageBodyButtonLink }}">{{ messageBodyButtonText }}</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+
+<!-- ================ END CTA BUTTON - CTA6 (BUTTON WITH BACKGROUND) ================ -->

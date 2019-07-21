@@ -1,0 +1,230 @@
+{% extends "body.nunjucks" %}
+
+{# =========================================
+  TEMPLATE / THEME SETTINGS
+========================================= #}
+
+{# Comment out to remove from template #}
+
+{# {% set demo = "true" %} #}
+
+{# {% set header1 = "true" %} #}
+{% set header2 = "true" %}
+{# {% set header3 = "true" %} #}
+{# {% set header4 = "true" %} #}
+{# {% set header5 = "true" %} #}
+{# {% set header6 = "true" %} #}
+{# {% set header7 = "true" %} #}
+{# {% set header8 = "true" %} #}
+
+{% set snippet = "true" %}
+
+{% set hero = "true" %}
+{# {% set hero2 = "true" %} #}
+
+{% set cta0 = "true" %}
+{# {% set cta1 = "true" %} #}
+{#{% set cta2 = "true" %}
+{% set cta3 = "true" %}
+{% set cta4 = "true" %}
+{% set cta5 = "true" %}
+{% set cta6 = "true" %}
+{% set cta7 = "true" %}
+{% set cta8 = "true" %}
+{% set cta9 = "true" %}
+{% set cta10 = "true" %}
+{% set cta11 = "true" %} #}
+{# {% set cta12 = "true" %} #}
+
+{# {% set quote1 = "true" %}
+{% set quote2 = "true" %} #}
+
+{# {% set signature = "true" %} #}
+{% set signature2 = "true" %}
+{# {% set signature3 = "true" %}
+
+{% set ps = "true" %} #}
+{% set disclaimer = "true" %}
+
+{# {% set footer1 = "true" %} #}
+{# {% set footer2 = "true" %} #}
+{% set footer3 = "true" %}
+{# {% set footer4 = "true" %} #}
+
+{# =========================================
+  OUTLOOK VARIABLES
+========================================= #}
+
+{# 
+ # Nunucks does not inline classes written
+ # in comments, therefore set these
+ # variables along with Sass variables
+#}
+
+{% set outlookMaxBodyWidth = "600" %}
+{% set outlookHalfBodyWidth = "300" %}
+{% set outlookMessageBodyMaxWidth = "550" %}
+{% set outlookHeaderLogoWidth = "166" %}
+{% set outlookButtonWidth = "370" %}
+{# {% set headerBackgroundImage = "https://secure3.convio.net/mdacc/images/content/pagebuilder/2018_bootwalk_stationery_hero_background.jpg" %} #}
+
+{# =========================================
+  GLOBAL VARIABLES
+========================================= #}
+
+{% set logoLink = "http://www.chicagosfoodbank.org" %}
+{% set logoImage = "https://secure2.convio.net/gcfd/images/content/pagebuilder/_greater-chicago-food-depository-logo.png" %}
+{% set footerLogoImage = "https://secure2.convio.net/gcfd/images/content/pagebuilder/_greater-chicago-food-depository-logo.png" %}
+{% set logoAltText = "Greater Chicago Food Depository Logo" %}
+{% set organizationName = "Greater Chicago Food Depository" %}
+{% set organizationStreet = "4100 W. Ann Lurie Place" %}
+{% set organizationCity = "Chicago" %}
+{% set organizationState = "IL" %}
+{% set organizationZip = " 60632" %}
+{% set organizationPhone = "773-247-3663" %}
+
+{# =========================================
+  PREHEADER AND SNIPPET
+========================================= #}
+
+{% set preHeaderText = "Before you ring in the New Year make sure you’ve tripled your impact!" %}
+
+{% block snippet -%}
+
+Before you ring in the New Year <a href="https://secure2.convio.net/gcfd/site/Donation2?df_id=10050&mfc_pref=T&10050.donation=form1&s_src=1218E12C&s_subsrc=gen&autologin=true&utm_source=LuminateOnline&utm_medium=Email&utm_campaign=FY19%20EOY%20Year%20End&utm_content=SnippetLink">make sure you’ve tripled your impact!</a>
+
+{%- endblock %}
+
+{# =========================================
+  HEADER VARIABLES
+========================================= #}
+
+{% set headerLogoSource = "https://secure2.convio.net/gcfd/images/content/pagebuilder/_greater-chicago-food-depository-logo.png" %}
+{% set headerLogoSourceSet = "https://secure2.convio.net/gcfd/images/content/pagebuilder/_greater-chicago-food-depository-logo.png 1x, https://secure2.convio.net/gcfd/images/content/pagebuilder/greater-chicago-food-depository-logo-2x.png 2x, https://secure2.convio.net/gcfd/images/content/pagebuilder/greater-chicago-food-depository-logo-3x.png 3x" %}
+
+{% set headerButtonText = "DONATE NOW" %}
+{% set headerButtonLink = "https://secure2.convio.net/gcfd/site/Donation2?df_id=10050&mfc_pref=T&10050.donation=form1&s_src=1218E12C&s_subsrc=gen&autologin=true&utm_source=LuminateOnline&utm_medium=Email&utm_campaign=FY19%20EOY%20Year%20End&utm_content=HeaderCTAButton" %}
+
+{# =========================================
+  HERO1
+========================================= #}
+
+{% set heroImageLink = "https://secure2.convio.net/gcfd/site/Donation2?df_id=10050&mfc_pref=T&10050.donation=form1&s_src=1218E12C&s_subsrc=gen&autologin=true&utm_source=LuminateOnline&utm_medium=Email&utm_campaign=FY19%20EOY%20Year%20End&utm_content=HeroImage" %}
+
+{# <!-- TODO: CONDITIONAL CONTENT // 1218E12Cgen --> #}
+{% set heroImageSrc = "https://secure2.convio.net/gcfd/images/content/pagebuilder/gcfd-eoy-2018-year-end-email-7-hero-25.png" %}
+
+{# <!-- TODO: CONDITIONAL CONTENT // 1218E12Cgen --> #}
+{% set heroImageAltText = "HELP US REACH OUR $25,000 MATCH GOAL BEFORE MIDNIGHT" %}
+
+{# =========================================
+  MESSAGE BODY CONTENT
+========================================= #}
+
+{% block paragraph_1 -%}
+
+[[S1:first_name]],
+
+{%- endblock %}
+
+{% block paragraph_2 -%}
+
+<p>One in six children in Cook County is at risk of hunger.  But for every child in need, there is a caring community member like you willing to reach out with a helping hand.</p>
+
+{%- endblock %}
+
+{% block paragraph_3 -%}
+
+<!-- TODO: CONDITIONAL CONTENT // 1218E12Cgen -->
+<p><a href="https://secure2.convio.net/gcfd/site/Donation2?df_id=10050&mfc_pref=T&10050.donation=form1&s_src=1218E12C&s_subsrc=gen&autologin=true&utm_source=LuminateOnline&utm_medium=Email&utm_campaign=FY19%20EOY%20Year%20End&utm_content=TextLink">Hours remain until our midnight match deadline. Donate now, and your gift will be matched 2:1 to provide critical meals for your hungry neighbors.</a></p>
+
+{%- endblock %}
+
+{# =========================================
+  CTA VARIABLES
+========================================= #}
+
+{% set ctaLinkGIF = "https://secure2.convio.net/gcfd/site/Donation2?df_id=10050&mfc_pref=T&10050.donation=form1&s_src=1218E12C&s_subsrc=gen&autologin=true&utm_source=LuminateOnline&utm_medium=Email&utm_campaign=FY19%20EOY%20Year%20End&utm_content=CTAClock" %}
+
+{# <!-- TODO: CONDITIONAL CONTENT // 1218E12Cgen --> #}
+{% set ctaImageGIF = "https://secure2.convio.net/gcfd/images/content/pagebuilder/gcfd-eoy-2018-year-end-email-7-cta-25gif.gif" %}
+
+{% set ctaAltTextGIF = "Clock countdown." %}
+
+{% set ctaLink = "https://secure2.convio.net/gcfd/site/Donation2?df_id=10050&mfc_pref=T&10050.donation=form1&s_src=1218E12C&s_subsrc=gen&autologin=true&utm_source=LuminateOnline&utm_medium=Email&utm_campaign=FY19%20EOY%20Year%20End&utm_content=CTA" %}
+
+{# <!-- TODO: CONDITIONAL CONTENT // 1218E12Cgen --> #}
+{% set ctaImage = "https://secure2.convio.net/gcfd/images/content/pagebuilder/gcfd-eoy-2018-year-end-email-7-cta-x3.png" %}
+
+{# <!-- TODO: CONDITIONAL CONTENT // 1218E12Cgen --> #}
+{% set ctaAltText = "THERE IS STILL TIME to make a tax-deductible donation and have your gift TRIPLED!" %}
+
+{# =========================================
+  MESSAGE BODY CONTENT 
+========================================= #}
+
+{% block paragraph_4 -%}
+
+<p><a href="https://secure2.convio.net/gcfd/site/Donation2?df_id=10050&mfc_pref=T&10050.donation=form1&s_src=1218E12C&s_subsrc=gen&autologin=true&utm_source=LuminateOnline&utm_medium=Email&utm_campaign=FY19%20EOY%20Year%20End&utm_content=TextLink">Don’t let the clock strike midnight without remembering your hungry neighbors.</a> With 812,000 people turning to our programs each year, the need is great. But thanks to the generosity of supporters like you, we can ensure that 2019 is a year of hope for our hungry Chicago and Cook County neighbors.</p>
+
+{%- endblock %}
+
+{% block paragraph_5 -%}
+
+<p>Wishing you a happy new year,</p>
+
+{%- endblock %}
+
+{% block paragraph_disclaimer -%}
+
+If match is met, gifts received from this appeal will be used to support the Food Depository’s work wherever the need is greatest.
+
+{%- endblock %}
+
+
+{# =========================================
+  SIGNATURE
+========================================= #}
+
+{% set signatureHeadshot = "https://secure2.convio.net/gcfd/images/content/pagebuilder/kate-maehr-headshot-2018-retina.jpg" %}
+{% set signatureHeadshotAltText = "Kate Maehr Headshot" %}
+
+{% set signatureSalutation = "With gratitude," %}
+{% set signatureName = "Kate Maehr" %}
+{% set signatureTitle = "Executive Director & CEO" %}
+
+{# =========================================
+  FOOTER - SOCIAL MEDIA
+========================================= #}
+
+{% set facebookLink = "https://www.facebook.com/fooddepository/" %}
+{% set facebookIcon = "https://secure2.convio.net/gcfd/images/content/pagebuilder/facebook-icon-white.png" %}
+
+{% set twitterLink = "https://twitter.com/FoodDepository" %}
+{% set twitterIcon = "https://secure2.convio.net/gcfd/images/content/pagebuilder/twitter-icon-white.png" %}
+
+{% set youtubeLink = "https://www.youtube.com/user/FoodDepository" %}
+{% set youtubeIcon = "https://secure2.convio.net/gcfd/images/content/pagebuilder/youtube-icon-white.png" %}
+
+{% set instagramLink = "https://www.instagram.com/fooddepository" %}
+{% set instagramIcon = "https://secure2.convio.net/gcfd/images/content/pagebuilder/instagram-icon-white.png" %}
+
+{# =========================================
+  FOOTER - UTLITY LINKS
+========================================= #}
+
+{% set utilityLinkDonate = "https://secure2.convio.net/gcfd/site/Donation2?df_id=10050&mfc_pref=T&10050.donation=form1&s_src=1218E12C&s_subsrc=gen&autologin=true&utm_source=LuminateOnline&utm_medium=Email&utm_campaign=FY19%20EOY%20Year%20End&utm_content=FooterDonateLink" %}
+
+{% set utilityLinkUnsubscribe = "http://gcfd.convio.net/site/CO" %}
+
+{% set utilityLinkViewOnline = "http://gcfd.convio.net/site/MessageViewer?s_src=1218E12C&s_subsrc=gen" %}
+
+{% set utilityLinkVisitWebsite = "http://gcfd.convio.net/site/MessageViewer?s_src=1218E12C&s_subsrc=gen" %}
+
+{% set utilityLinkContact = "https://www.chicagosfoodbank.org/contact/?s_src=1218E12C&s_subsrc=gen" %}
+
+{% set utilityLinkPrivacy = "https://www.chicagosfoodbank.org/privacy-policy/?s_src=1218E12C&s_subsrc=gen" %}
+
+{% set utilityLinkForward = "http://gcfd.convio.net/site/MessageViewer?s_src=1218E12C&s_subsrc=gen" %}
+
+

@@ -1,0 +1,100 @@
+
+{# =========================================
+  FOOTER - v2 (TWO COLUMN)
+========================================= #}
+
+<!-- ======= START FOOTER ======= -->
+
+<table role="presentation" dir="ltr" cellpadding="0" cellspacing="0" width="100%" class="footer 2">
+  <tr>
+    <td class="one-column footer-padding">
+      <!--[if (gte mso 9)|(IE)]>
+      <table role="presentation" cellpadding="0" cellspacing="0">
+      <tr>
+      <td width="100%" valign="middle">
+      <![endif]-->
+      <div style="width:100%; max-width: 540px; display:inline-block; vertical-align:middle; direction:ltr;">
+        <!--[if (gte mso 9)|(IE)]>
+        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+        <td width="50%" valign="middle"">
+        <![endif]-->
+        <div class="two-column-stack ">
+          <table align="center" role="presentation" class="one-column " cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td align="center">
+                <!-- FOOTER LOGO -->
+                <a href="{{ logoLink }}" style="border: 0; display: block; text-decoration: none;">
+                  <img src="{{ footerLogoImage }}" class="img-footer-logo-width" srcset="{% block footer_logo_img_url_srcset_v2 %}{% endblock %}" width="208" alt="{{ logoAltText }}" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="50%" valign="middle">
+        <![endif]-->
+        <div class="two-column-stack">
+          <table align="center" role="presentation" width="166" cellpadding="0" cellspacing="0" class="social-media">
+            <tr>
+              <td class="appleFooter">
+                 <a href="{{ facebookLink }}">
+                  <img src="{{ facebookIcon }}" align="center" alt="Facebook"/>
+                </a>
+              </td>
+              <td class="appleFooter">
+                <a href="{{ twitterLink }}">
+                  <img src="{{ twitterIcon }}" align="center" alt="Twitter"/>
+                </a>
+              </td>
+              <td class="appleFooter">
+                <a href="{{ youtubeLink }}">
+                  <img src="{{ youtubeIcon }}" align="center" alt="YouTube"/>
+                </a>
+              </td>
+              <td class="appleFooter" style="padding-top:10px;padding-bottom:10px;padding-right:0;padding-left:0;text-align:center; vertical-align: middle;" >
+                <a href="{{ instagramLink }}">
+                  <img src="{{ instagramIcon }}" align="center" alt="Instagram"/>
+                </a>
+              </td>
+            </tr>
+          </table>
+          <table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" style="min-width:100%;">
+            <tr>
+              <td class="appleFooter" align="center" style="padding: 0; padding-bottom: 12px; text-align:center; vertical-align: middle; line-height: 24px;">
+                <span class="appleFooter" style="padding: 0; font-size: 12px; line-height: 24px; font-family: Arial, sans-serif; color:#ffffff; text-align: left; font-weight: normal;">
+                  <a style="color:#ffffff; text-decoration: none; font-weight: normal; line-height: 24px">1141 Central Parkway, Cincinnati, Ohio 45202</a><br>
+                  Phone: <a href="tel:1-513-482-4500" style="color: #ffffff; text-decoration: none; font-weight: normal; line-height: 24px">513-482-4500</a><br>
+                  <span style="line-height: 24px">&copy; 2018 Freestore Foodbank, All rights reserved.</span>
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+      </div>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" class="footer-utility-links">
+  <tr>
+    <td class="appleFooter footer-utility-links">
+      <a target="_blank" href="{{ utilityLinkUnsubscribe }}">Unsubscribe</a>
+      <span class="mobile-hide">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <a target="_blank" href="{{ utilityLinkViewOnline }}">View Online</a>
+      <span class="mobile-hide">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <a target="_blank" href="{{ utilityLinkVisitWebsite }}">Visit Website</a>
+      <span class="mobile-hide">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <a target="_blank" href="{{ utilityLinkContact }}">Contact Us</a>
+      <span class="mobile-hide">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+      <a target="_blank" href="{{ utilityLinkForward }}">Forward</a>
+    </td>
+  </tr>
+</table>
+
+<!-- ======= END FOOTER ======= -->

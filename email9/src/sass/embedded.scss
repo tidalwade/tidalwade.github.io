@@ -1,0 +1,213 @@
+@import 'reset';
+@import 'variables';
+
+/* ------------- EMAIL CLIENT FIXES ------------- */
+
+
+#outlook a { padding:0; } /* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody { width:100%; } .ExternalClass { width:100%; } /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div  { line-height: 100%; } /* Force Hotmail to display normal line spacing */
+#MessageViewBody, #MessageWebViewDiv {width: 100% !important; } /* Fix Samsung Mail left align issue */
+
+/* ------------- UTLIITY CLASSES ------------- */
+
+/* WHEN USING CUSOM FONTS */
+/*[style*="Montserrat"]  { font-family: 'Montserrat', sans-serif !important } /* Override Outlook to not break on imported fonts */
+
+/* iOS BLUE LINKS */
+/*.appleBody a { color:#5f5e5e; text-decoration: none; }
+.appleFooter a { color:#ffffff; text-decoration: none; }*/
+
+/* iOS BLUE LINKS */
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+}
+
+/* GMAIL BLUE LINKS */
+u + #body a {
+  color: inherit;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* ------------- CUSTOM STYLES ------------- */
+
+.header-cta-button a:hover {
+  background: $header-cta-bg-color-hover;
+  border: 1px solid $header-cta-bg-color-hover;
+}
+.snippet p a:hover {
+  color: $snippet-font-link-color-hover;
+}
+.message-body-text p a:hover {
+  color: $message-body-font-link-color-hover;
+}
+.message-body-cta a:hover {
+  background: $message-body-cta-bg-color-hover;
+  background-color: $message-body-cta-bg-color-hover;
+  border: 1px solid $message-body-cta-bg-color-hover;
+}
+
+// /* ------------- SNOW ------------- */
+// /*Keyframes*/
+
+// @keyframes snow {
+//   0% {
+//       background-position: 0px 0px, 0px 0px, 0px 0px;
+//   }
+//   100% {
+//       background-position: 500px 1000px, 400px 400px, 300px 300px;
+//   }
+// }
+// @-moz-keyframes snow {
+//     0% {
+//         background-position: 0px 0px, 0px 0px, 0px 0px;
+//     }
+//     100% {
+//         background-position: 500px 1000px, 400px 400px, 300px 300px;
+//     }
+// }
+// @-webkit-keyframes snow {
+//     0% {
+//         background-position: 0px 0px, 0px 0px, 0px 0px;
+//     }
+//     50% {
+//         background-color: #005eb8;
+//     }
+//     100% {
+//         background-position: 500px 1000px, 400px 400px, 300px 300px;
+//         background-color: #005eb8;
+//     }
+// }
+// @-ms-keyframes snow {
+//     0% {
+//         background-position: 0px 0px, 0px 0px, 0px 0px;
+//     }
+//     100% {
+//         background-position: 500px 1000px, 400px 400px, 300px 300px;
+//     }
+// }
+// #css-snow {
+//   // background-color: #005eb8;
+//   background-image: url('https://eroi-s3.s3.amazonaws.com/emailassets/clients/tacobell/2016_dec/snow.png'), url('https://eroi-s3.s3.amazonaws.com/emailassets/clients/tacobell/2016_dec/snow3.png'), url('https://eroi-s3.s3.amazonaws.com/emailassets/clients/tacobell/2016_dec/snow2.png');
+//   -webkit-animation: snow 25s linear infinite;
+//   -moz-animation: snow 25s linear infinite;
+//   -ms-animation: snow 25s linear infinite;
+//   animation: snow 25s linear infinite;
+//   width:100%;
+//   display:block;
+//   margin:0 auto;
+// }
+// #css-snow-inner {
+//   // background: url('https://eroi-s3.s3.amazonaws.com/emailassets/clients/tacobell/2016_dec/blue-gradient-background.png') no-repeat bottom center;
+//   width:100%;
+//   height:100%;
+// }	
+
+/* ------------- MOBILE STYLES / PROGRESSIVE ENHANCEMENT ------------- */
+
+@media screen and (min-width: 600px) {
+  .desktop-hide {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .mobile-hide {
+    display: none !important;
+  }
+  /*.logo, .logo img {
+    width: 150px !important;
+  }*/
+  /*.logo.footer, .logo.footer img {
+    width: 175px !important;
+  }*/
+  .media-query-full-width-table {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .mobile-no-top-padding {
+    padding-top: 0 !important;
+  }
+  .mobile-logo-padding {
+    padding-bottom: 0 !important;
+    height: auto !important;
+  }
+  .one-column .header-padding {
+    // padding: 40px 25px !important;
+  }
+  /*.donate-button, .donate-button a {
+    width: 140px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 16px !important;
+  }*/
+  .hero-mobile a {
+    display: block !important;
+  }
+  .hero-mobile, .hero-mobile img {
+    display: block !important;
+    max-height: none !important;
+    overflow: visible !important;
+    width: 100% !important;
+  }
+  .cta-desktop img {
+    width: 100% !important;
+  }
+  .cta-desktop.clock img {
+    max-width: 214px !important;
+  }
+  .mobile-body-padding {
+    padding: 40px 20px !important;
+  }
+  .mobile-text-center {
+    text-align: center !important;
+  }
+  .mobile-show {
+    display: inline !important;
+  }
+  .mobile-padding {
+    padding-left: 0 !important;
+    padding-right: 0!important;
+  }
+  .message-body-cta.cta1,
+  .message-body-cta.cta1 table,
+  .message-body-cta.cta1 table td
+  .message-body-cta.cta1 td,
+  .message-body-cta.cta1 a {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .message-body-cta.cta1 td,
+  .message-body-cta.cta1 a {
+    max-width: calc(100% - 50px) !important;
+    min-width: calc(100% - 50px) !important;
+  }
+  .message-body-cta.cta10,
+  .message-body-cta.cta10 table,
+  .message-body-cta.cta10 table td
+  .message-body-cta.cta10 td,
+  .message-body-cta.cta10 a {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .message-body-cta.cta10 td,
+  .message-body-cta.cta10 a {
+    max-width: calc(100% - 50px) !important;
+    min-width: calc(100% - 50px) !important;
+  }
+  .cta-desktop.cta9 img {
+    max-width: 100% !important;
+  }
+  .footer.3 div {
+    max-width: 100% !important;
+  }
+}
+

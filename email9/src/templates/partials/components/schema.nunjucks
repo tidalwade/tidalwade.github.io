@@ -1,0 +1,8 @@
+<!-- SCHEMA.ORG -->
+<div itemscope="" itemtype="http://schema.org/EmailMessage">
+  <div itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="[[S0:SITE_NAME]]">
+    {# <link itemprop="url" content="https://freestorefoodbank.org/"> #}
+  </div>
+  <div itemprop="about" itemscope="" itemtype="http://schema.org/DonateAction"></div>
+</div>

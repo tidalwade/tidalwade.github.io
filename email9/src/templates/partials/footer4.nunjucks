@@ -1,0 +1,63 @@
+{# =========================================
+FOOTER - v4 (ONE COLUMN - MULTI COLORED)
+========================================= #}
+
+<!-- ======= START FOOTER ======= -->
+
+<table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0" class="social-media footer 4">
+  <tr>
+    <td align="center">
+      <table role="presentation" align="center" cellpadding="0" cellspacing="0" >
+        <tr>
+          <td align="center">
+            <a href="{{ facebookLink }}">
+              <img align="center" src="{{ facebookIcon }}" align="center" alt="Facebook"/>
+            </a>
+          </td>
+          <td align="center">
+            <a href="{{ twitterLink }}">
+              <img align="center" src="{{ twitterIcon }}" align="center" alt="Twitter"/>
+            </a>
+          </td>
+          <td align="center">
+            <a href="{{ youtubeLink }}">
+              <img align="center" src="{{ youtubeIcon }}" align="center" alt="YouTube"/>
+            </a>
+          </td>
+          <td align="center">
+            <a href="{{ instagramLink }}">
+              <img align="center" src="{{ instagramIcon }}" align="center" alt="Instagram"/>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="footer 4 address">
+  <tr>
+    <td>
+      <span style="">
+        {{ organizationName }}<br><a>{{ organizationStreet }}, {{ organizationCity }}, {{ organizationState }}, {{ organizationZip }}</a>
+        <br><br>
+        <a href="tel:1-{{ organizationPhone }}" >{{ organizationPhone }}</a>
+      </span>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="footer 4 footer-utility-links">
+  <tr>
+    <td>
+      <span>
+        <a target="_blank" style="font-size: 14px; line-height:18px; font-family: Arial, Helvetica, sans-serif; color: #b20838; text-decoration: none" href="{{ utilityLinkDonate }}">Donate</a><span style="color: #000000">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        <a target="_blank" style="font-size: 14px; line-height:18px; font-family: Arial, Helvetica, sans-serif; color: #b20838; text-decoration: none" href="{{ utilityLinkViewOnline }}">View Online</a><span style="color: #000000">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        <a target="_blank" style="font-size: 14px; line-height:18px; font-family: Arial, Helvetica, sans-serif; color: #b20838; text-decoration: none" href="{{ utilityLinkPrivacy }}">Privacy Policy</a><span style="color: #000000">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+        <a target="_blank" style="font-size: 14px; line-height:18px; font-family: Arial, Helvetica, sans-serif; color: #b20838; text-decoration: none" href="{{ utilityLinkUnsubscribe }}">Unsubscribe</a>
+      </span>
+    </td>
+  </tr>
+</table>
+
+<!-- ======= END FOOTER ======= -->

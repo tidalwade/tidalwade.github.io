@@ -1,0 +1,57 @@
+<!-- ======= START TWO COLUMN HEADER (STANDARD) ======= -->
+
+<table role="presentation" dir="ltr" cellpadding="0" cellspacing="0" border="0" width="100%" class="hero-stack">
+  <tr>
+    <td class="reset">
+      <!--[if (gte mso 9)|(IE)]>
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="{{ outlookMaxBodyWidth }}" style="background-color: #1b5733; border-spacing:0;font-family: Calibri, sans-serif;color:#1b5733;" >
+      <tr>
+      <td width="{{ outlookHalfBodyWidth }}" valign="middle" class="no-padding" >
+      <![endif]-->
+      <div class="two-column-1">
+        <table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" width="100%" class="hero-stack">
+          <tr>
+            <td align="center" class="two-column-container">
+              <table role="presentation" class="one-column hero-desktop" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center">
+                    <a href="{{ heroImageLinkStack1 }}" style="border: 0; display: block; text-decoration: none;">
+                      <img src="{{ heroImageSrcStack1 }}" width="{{ outlookHalfBodyWidth }}" alt="{{ heroImageAltTextStack1 }}" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td><td width="{{ outlookHalfBodyWidth }}" valign="middle" class="no-padding" >
+      <![endif]-->
+      <div class="two-column-2">
+        <table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" width="100%" class="header-bg-color">
+          <tr>
+            <td align="center" class="mobile-no-top-padding two-column-container" >
+              <table role="presentation" class="one-column hero-desktop" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td align="center">
+                    <a href="{{ heroImageLinkStack2 }}" style="border: 0; display: block; text-decoration: none;">
+                      <img src="{{ heroImageSrcStack2 }}" width="{{ outlookHalfBodyWidth }}" alt="{{ heroImageAltTextStack2 }}" />
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </td>
+  </tr>
+</table>
+
+<!-- ======= END TWO COLUMN HEADER (STANDARD) ======= -->

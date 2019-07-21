@@ -1,0 +1,18 @@
+<!-- =============== START CTA BUTTON - CTA9 (HALF WIDTH IN DESKTOP IMAGE) ================== -->
+
+{% if demo %}
+<h2 class="demo">CTA 9</h2>
+<p class="demo">This is a half-width CTA image in desktop that is full-width is mobile viewports.</p>
+{% endif %}
+
+<table role="presentation" class="cta-desktop cta9" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="center">
+      <a href="{{ ctaLink }}">
+        <img src="{{ ctaImage }}" width="{{ outlookMessageBodyHalfWidth }}" alt="{{ ctaAltText }}" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<!-- =============== END CTA BUTTON - CTA9 (HALF WIDTH IN DESKTOP IMAGE) ================== -->

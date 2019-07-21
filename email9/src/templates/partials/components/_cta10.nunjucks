@@ -1,0 +1,47 @@
+<!-- =============== START CTA BUTTON - CTA2 (STANDARD BUTTON) ================== -->
+
+{% if demo %}
+<h2 class="demo">CTA 10</h2>
+<p class="demo">This is a standard CTA button with a username and password reset for use in autoresponders and coaching emails.</p>
+{% endif %}
+
+<!--[if (gte mso 9)|(IE)]>
+<table role="presentation" align="center" role="presentation" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="350" align="center">
+<![en30f]-->
+<table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="message-body message-body-cta cta10">
+  <tr>
+    <td align="center">
+      <!-- CTA Button -->
+      <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center cta-button">
+            <div>
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ messageBodyButtonLink }}" style="height:62px;v-text-anchor:middle;width:{{outlookButtonWidth}};" arcsize="20%" strokecolor="{{$message-body-cta-bg-color}}" fillcolor="{{$message-body-cta-bg-color}}">
+              <w:anchorlock/>
+              <center style="color:#ffffff;font-family:{{$cta-font}};font-size:{{$cta-font-size}}">{{ messageBodyButtonText }}</center>
+              </v:roundrect>
+              <![endif]-->            
+              <a href="{{ messageBodyButtonLink }}">{{ messageBodyButtonText }}</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<p class="cta10">
+  Username: [[S1:user_name]]<br>
+  Password: <a href"#">reset</a>
+</p>
+
+<!--[if (gte mso 9)|(IE)]>
+</td>
+</tr>
+</table>
+<![endif]-->
+
+<!-- =============== END CTA BUTTON - CTA2 (STANDARD BUTTON) ================== -->

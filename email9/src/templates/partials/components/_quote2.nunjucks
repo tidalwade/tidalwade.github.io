@@ -1,0 +1,17 @@
+<!-- ======= START QUOTE 2 (ONE COLUMN) ======= -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#ffffff" style="min-width: 100%; width: 100%; max-width: {{ outlookMessageBodyMaxWidth }}px; background-color:#ffffff">
+  <tr>
+    <td id="hero" align="center">
+      <a href="{{ quoteLink }}">
+        <img src="{{ quoteImage }}" width="{{ outlookMessageBodyMaxWidth }}" alt="{{ quoteAltText }}" class="img-max" style="display: block; border: 0; max-width:{{ outlookMessageBodyMaxWidth }}px;" />
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="background-color: #09bce5; padding: 25px 45px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px">
+      <h1 style="font-family: Arial, sans-serif; color: #ffffff; font-size: 18px; line-height: 22px; font-weight: bold; text-align: center; margin-bottom: 0;">&ldquo;{{ quotePullQuote }}&rdquo;</h1>
+      <p style="font-family: Arial, sans-serif; color: #ffffff; font-size: 14px; line-height: 20px; font-weight: bold; text-align: right; margin-top: 10px; margin-bottom: 0"> - {{ quoteName }}, {{ quoteTitle }}, {{ quoteLocation }}</p>
+    </td>
+  </tr>
+</table>

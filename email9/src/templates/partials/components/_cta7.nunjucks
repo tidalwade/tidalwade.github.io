@@ -1,0 +1,25 @@
+<!-- ======= START CTA - CTA7 - FULL WIDTH BUTTON (ONE COLUMN) ======= -->
+
+{% if demo %}
+<h2 class="demo">CTA 7</h2>
+<p class="demo">This is a CTA button that displays full width.</p>
+{% endif %}
+
+<table class="cta7" width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+
+      <!-- CTA Button -->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="middle" align="center">
+            <a href="{{ messageBodyButtonLink }}" style="font-size: 20px; font-family: Arial, sans-serif; font-weight: bold; color: #ffffff; vertical-align: middle; text-decoration: none; display: inline-block;">{{ messageBodyButtonText }}</a>
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+<!-- ======= END CTA - CTA7 - FULL WIDTH BUTTON (ONE COLUMN) ======= -->

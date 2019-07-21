@@ -1,0 +1,26 @@
+<!-- FONTS -->
+<!--[if !mso]><!-- -->
+
+{# GOOGLE FONTS #}
+{# <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet"> #}
+
+{# IMPORT #}
+{# <style>
+@import url("https://use.typekit.net/qnu6gsi.css");
+</style> #}
+<style>
+@font-face {
+  font-family: 'Flama';
+  src: url('//secure2.convio.net/gcfd/css/fonts/FlamaMedium-Regular.eot');
+  src: url('//secure2.convio.net/gcfd/css/fonts/FlamaMedium-Regular.eot?#iefix') format('embedded-opentype'),
+    url('//secure2.convio.net/gcfd/css/fonts/FlamaMedium-Regular.woff') format('woff'),
+    url('//secure2.convio.net/gcfd/css/fonts/FlamaMedium-Regular.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  /*line-height: 1.6;*/
+  /*font-weight: normal;*/
+  /*font-family: 'Flama',Arial,sans-serif;*/
+  /*color: #333333;*/
+}
+</style>
+<!--<![endif]-->

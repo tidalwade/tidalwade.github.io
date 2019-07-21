@@ -1,0 +1,300 @@
+{% include "partials/header.nunjucks" %}
+
+<body>
+
+<!-- ======= START HIDDEN PREHEADER TEXT ======= -->
+<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Calibri, Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;">{{ preHeaderText }}</div>
+
+<!-- ======= ENSURES NOTHING COMES AFTER PREVIEW TEXT ======= -->
+<div style="display: none; max-height: 0px; overflow: hidden;">
+&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;
+</div>
+
+<center class="wrapper">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="wrapping-table">
+    <tr>
+      <td width="100%">
+        <div class="webkit">
+
+          <!-- ======= START MAIN BODY ======= -->
+
+          <!--[if (gte mso 9)|(IE)]>
+          <table role="presentation" width="{{ outlookMaxBodyWidth }}" align="center" cellpadding="0" cellspacing="0" border="0" >
+          <tr>
+          <td class="no-padding" >
+          <![endif]-->
+          <table role="presentation" class="outer" align="center" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+              <td class="no-padding">
+
+                {% if snippet %}
+                
+                <!-- ======= START SNIPPET ======= -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="snippet mobile-hide">
+                  <tr>
+                    <td align="center">
+                      <p>{% block snippet %}{% endblock %}</p>
+                    </td>
+                  </tr>
+                </table>
+
+                {% endif %}
+
+                {% if header1 %}
+                  {% include "partials/components/_header1.nunjucks" %}
+                {% endif %}
+
+                {% if header2 %}
+                  {% include "partials/components/_header2.nunjucks" %}
+                {% endif %}
+
+                {% if header3 %}
+                  {% include "partials/components/_header3.nunjucks" %}
+                {% endif %}
+
+                {% if header4 %}
+                  {% include "partials/components/_header4.nunjucks" %}
+                {% endif %}
+
+                {% if header5 %}
+                  {% include "partials/components/_header5.nunjucks" %}
+                {% endif %}
+
+                {% if header6 %}
+                  {% include "partials/components/_header6.nunjucks" %}
+                {% endif %}
+
+                {% if header7 %}
+                  {% include "partials/components/_header7.nunjucks" %}
+                {% endif %}
+
+                {% if header8 %}
+                  {% include "partials/components/_header8.nunjucks" %}
+                {% endif %}
+
+                {% if header9 %}
+                  {% include "partials/components/_header9.nunjucks" %}
+                {% endif %}
+
+                {% if headerMosaic %}
+                  {% include "partials/components/_header-mosaic.nunjucks" %}
+                {% endif %}
+                
+                {% if hero %}
+                  {% include "partials/components/_hero.nunjucks" %}
+                {% endif %}
+
+                {% if hero2 %}
+                  {% include "partials/components/_hero2.nunjucks" %}
+                {% endif %}
+
+                {# <table role="presentation" class="hero-mobile desktop-hide" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-spacing:0;font-family: Arial, sans-serif;color:#5f5e5e;background-color: #ffffff; display:none; max-height: 0px; overflow: hidden;" bgcolor="#ffffff">
+                  <tr>
+                    <td align="center">
+                      <a href="{% block hero_image_mobile_link %}{% endblock %}">
+                        <img src="{% block hero_image_mobile_url_src %}{% endblock %}" width="100%" alt="{% block hero_image_mobile_alt_text %}{% endblock %}" />
+                      </a>
+                    </td>
+                  </tr>
+                </table> #}
+
+                <!-- ======= END HERO ======= -->
+
+                <!-- ======= START BODY ======= -->
+
+                <table role="presentation" class="one-column message-body" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td class="message-body-padding message-body-text">
+
+                      {# <h1>{% block h1 %}{% endblock %}</h1> #}
+
+                      {# <h2>{% block h2 %}{% endblock %}</h2> #}
+                      
+                      {# <h3>{% block h3 %}{% endblock %}</h3> #}
+
+                      <!-- CONDITIONAL CONTENT -->
+                      [[?xx::x[[S1:first_name]]x::::<p>{% block paragraph_1 %}{% endblock %}</p>]]
+
+                      {% if cta1 %}
+                        {% include "partials/components/_cta1.nunjucks" %}
+                      {% endif %}
+
+                      {% if cta2 %}
+                        {% include "partials/components/_cta2.nunjucks" %}
+                      {% endif %}
+
+                      {% block paragraph_2 %}{% endblock %}
+                      
+                      {% block paragraph_3 %}{% endblock %}
+
+                    </td>
+                  </tr>
+                </table>
+
+                {% if cta0 %}
+                  {% include "partials/components/_cta0.nunjucks" %}
+                {% endif %}
+
+                <table role="presentation" class="one-column message-body" border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td class="message-body-padding message-body-text">
+                      
+                      {% block paragraph_4 %}{% endblock %}
+
+                      {% block paragraph_5 %}{% endblock %}
+                    
+                      {% block paragraph_6 %}{% endblock %}
+
+                      {% block paragraph_7 %}{% endblock %}
+
+                      {% block paragraph_8 %}{% endblock %}
+
+
+                      {# {% if quote1 %}
+                        {% include "partials/components/_quote1.nunjucks" %}
+                      {% endif %}
+
+                      {% if quote2 %}
+                        {% include "partials/components/_quote2.nunjucks" %}
+                      {% endif %}
+
+                      <p>{% block paragraph_3 %}{% endblock %}</p>
+
+                      {% if cta3 %}
+                        {% include "partials/components/_cta3.nunjucks" %}
+                      {% endif %}
+
+                      <p>{% block paragraph_4 %}{% endblock %}</p>
+
+                      {% if cta4 %}
+                        {% include "partials/components/_cta4.nunjucks" %}
+                      {% endif %}
+
+                      <p>{% block paragraph_5 %}{% endblock %}</p>
+
+                      {% if cta5 %}
+                        {% include "partials/components/_cta5.nunjucks" %}
+                      {% endif %}
+
+                      {% if cta6 %}
+                        {% include "partials/components/_cta6.nunjucks" %}
+                      {% endif %}
+
+                      <p>{% block paragraph_6 %}{% endblock %}</p>
+
+                      <ul>
+                        <li>{% block list_item_1 %}{% endblock %}</li>
+                        <li>{% block list_item_2 %}{% endblock %}</li>
+                        <li>{% block list_item_3 %}{% endblock %}</li>
+                      </ul>
+
+                      <p>{% block paragraph_7 %}{% endblock %}</p>
+
+                      {% if cta7 %}
+                        {% include "partials/components/_cta7.nunjucks" %}
+                      {% endif %}
+
+                      <p>{% block paragraph_8 %}{% endblock %}</p>
+
+                      {% if cta8 %}
+                        {% include "partials/components/_cta8.nunjucks" %}
+                      {% endif %}
+
+                      {% if cta9 %}
+                        {% include "partials/components/_cta9.nunjucks" %}
+                      {% endif %}
+
+                      {% if cta10 %}
+                        {% include "partials/components/_cta10.nunjucks" %}
+                      {% endif %}
+
+                      {% if cta11 %}
+                        {% include "partials/components/_cta11.nunjucks" %}
+                      {% endif %} #}
+
+                      {% if cta12 %}
+                        {% include "partials/components/_cta12.nunjucks" %}
+                      {% endif %}
+
+                      {# <p>{% block paragraph_9 %}{% endblock %}</p>           
+
+                      <ol>
+                        <li>{% block list_item_4 %}{% endblock %}</li>
+                        <li>{% block list_item_5 %}{% endblock %}</li>
+                        <li>{% block list_item_6 %}{% endblock %}</li>
+                      </ol>
+
+                      <p>{% block paragraph_10 %}{% endblock %}</p> #}
+
+                      {% if signature %}
+                        {% include "partials/components/_signature.nunjucks" %}
+                      {% endif %}
+
+                      {% if signature2 %}
+                        {% include "partials/components/_signature2.nunjucks" %}
+                      {% endif %}
+
+                      {% if signature3 %}
+                        {% include "partials/components/_signature3.nunjucks" %}
+                      {% endif %}
+
+                      {% if ps %}
+                      <!-- P.S. -->
+                      <p class="ps" >{% block paragraph_ps %}{% endblock %}</p>
+                      {% endif %}
+
+                      {% if disclaimer %}
+                      <!-- DISCLAIMER -->
+                      <p class="disclaimer" >{% block paragraph_disclaimer %}{% endblock %}</p>
+                      {% endif %}
+
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- ======= END BODY ======= -->
+
+              </td> 
+            </tr>
+            <tr>
+              <td>
+
+              {% if footerMosaic %}
+                {% include "partials/components/_footer-mosaic.nunjucks" %}
+              {% endif %}
+
+              {% if footer1 %}
+                {% include "partials/footer1.nunjucks" %}
+              {% endif %}
+
+              {% if footer2 %}
+                {% include "partials/footer2.nunjucks" %}
+              {% endif %}
+
+              {% if footer3 %}
+                {% include "partials/footer3.nunjucks" %}
+              {% endif %}
+
+              {% if footer4 %}
+                {% include "partials/footer4.nunjucks" %}
+              {% endif %}
+
+              {% if footer5 %}
+                {% include "partials/footer5.nunjucks" %}
+              {% endif %}
+
+              </td>
+            </tr>
+          </table>
+          <!--[if (gte mso 9)|(IE)]>
+          </td>
+          </tr>
+          </table>
+          <![endif]-->
+        </div>
+      </td>
+      </tr>
+  </table>
+</center>
+</body>
+</html>

@@ -1,0 +1,13 @@
+/*------------------------------------*\
+  RESET STYLES
+\*------------------------------------*/
+
+body { Margin: 0; margin:0; padding:0; min-width: 100%; -webkit-font-smoothing: antialiased; mso-line-height-rule: exactly;  }
+td, p, h1, h2, h3, a { -webkit-font-smoothing: antialiased; }
+img { display: block; border:0; height:auto; line-height:100%; outline:none; text-decoration:none; }
+table { border-spacing: 0; border-collapse:collapse !important; }
+body { height:100% !important; margin:0; padding:0; width:100% !important; -webkit-text-size-adjust:none; }
+body, table, td, a { -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; } /* Prevent WebKit and Windows mobile changing default text sizes */
+table, td { mso-table-lspace:0pt; mso-table-rspace:0pt; } /* Remove spacing between tables in Outlook 2007 and up */
+img { -ms-interpolation-mode:bicubic; } /* Allow smoother rendering of resized image in Internet Explorer */
+body  {  margin:0 !important;  } div[style*="margin: 16px 0"]  {  margin:0 !important;  } /* Fix Android 4.4 body centering issue */

@@ -1,0 +1,151 @@
+{# =========================================
+  FOOTER - v3 (TWO COLUMN - VERTICAL LOGO)
+========================================= #}
+
+<!-- ======= START FOOTER ======= -->
+
+<table role="presentation" dir="ltr" cellpadding="0" cellspacing="0" width="100%" class="footer 3">
+  <tr>
+    <td style="padding-top:30px;padding-bottom:50px;padding-right:0;padding-left:0;text-align:center;font-size:0;">
+      <!--[if (gte mso 9)|(IE)]>
+      <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+      <td width="60%" valign="middle" >
+      <![endif]-->
+      <div style="width:100%; padding: 10px 0; max-width:360px; display:inline-block; vertical-align:middle; direction:ltr;">
+        <!--[if (gte mso 9)|(IE)]>
+        <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+        <td width="40%" valign="middle" >
+        <![endif]-->
+        <div class="media-query-full-width-table" style="width:100%; max-width:130px; display:inline-block; vertical-align:middle; direction:ltr; padding: 15px 0">
+          <table role="presentation" align="center" class="one-column" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="center" style="padding: 0;">
+                <!-- FOOTER LOGO -->
+                <a href="https://www.chicagosfoodbank.org/" style="display: block; border: 0px !important;">
+                  <img src="https://secure2.convio.net/gcfd/images/content/pagebuilder/gcfd_fy17_ham_emails.png" width="65" alt="Greater Chicago Food Depository Logo" style="max-width:65px;" />
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="60%" valign="middle" >
+        <![endif]-->
+        <div style="width:100%; max-width:230px; display:inline-block; vertical-align:middle; direction:ltr; padding: 15px 0">
+          <table role="presentation" align="center" width="100%" cellpadding="0" cellspacing="0">
+            <tr>
+              <td class="appleFooter" align="center" style="padding: 0; padding-bottom: 12px; text-align:center; vertical-align: middle;">
+                <span class="appleFooter" style="color: #ffffff; font-size: 12px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:18px; color: #ffffff; font-family: Calibri, Arial, sans-serif; text-transform: none; font-weight: normal;">
+                  <strong>{{ organizationName }}</strong><br>
+                  {{ organizationStreet }}<br>
+                  {{ organizationCity }}, {{ organizationState }} {{ organizationZip }} | <a href="tel:1-{{ organizationPhone }}" style="color: #ffffff; font-size: 12px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:18x; color: #ffffff; font-family: Calibri, Arial, sans-serif; text-transform: none; text-decoration: none; font-weight: normal;">{{ organizationPhone }}</a>
+                </span>
+              </td>
+            </tr>
+          </table>
+          <table align="center" role="presentation" cellpadding="0" cellspacing="0" class="social-media">
+            <tr>
+              <td class="appleFooter">
+                <a href="{{ twitterLink }}">
+                  <img width="27" height="27" src="{{ twitterIcon }}" align="center" alt="Twitter"/>
+                </a>
+              </td>
+              <td class="appleFooter">
+                 <a href="{{ facebookLink }}">
+                  <img width="27" height="27" src="{{ facebookIcon }}" align="center" alt="Facebook"/>
+                </a>
+              </td>
+              <td class="appleFooter">
+                <a href="{{ youtubeLink }}">
+                  <img width="27" height="27" src="{{ youtubeIcon }}" align="center" alt="YouTube"/>
+                </a>
+              </td>
+              <td class="appleFooter">
+                <a href="{{ instagramLink }}">
+                  <img width="27" height="27" src="{{ instagramIcon }}" align="center" alt="Instagram"/>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+        <![endif]-->
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td><td width="40%" valign="middle">
+      <![endif]-->
+      <div style="width:100%; max-width:240px; display:inline-block; vertical-align:middle; direction:ltr; padding: 15px 0">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="appleFooter" colspan="2" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;text-align:center;" >
+              <p style="margin: 0;"><a target="_blank" style="font-size: 12px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:26px; font-family: Calibri, Arial, sans-serif; color: #ffffff; text-decoration: underline; font-weight: bold;" href="{{ utilityLinkDonate }}">Donate Now</a></p>
+              <p style="margin: 0;"><a target="_blank" style="font-size: 12px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:26px; font-family: Calibri, Arial, sans-serif; color: #ffffff; text-decoration: underline; font-weight: bold;" href="{{ utilityLinkForward }}">Forward this Email</a></p>
+              <p style="margin: 0;"><a target="_blank" style="font-size: 12px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:26px; font-family: Calibri, Arial, sans-serif; color: #ffffff; text-decoration: underline; font-weight: bold;" href="{{ utilityLinkViewOnline }}">View on Web</a></p>
+              <p style="margin: 0;"><a target="_blank" style="font-size: 12px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:26px; font-family: Calibri, Arial, sans-serif; color: #ffffff; text-decoration: underline; font-weight: bold;" href="{{ utilityLinkContact }}">Contact Us</a></p>
+              <p style="margin: 0;"><a target="_blank" style="font-size: 12px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:26px; font-family: Calibri, Arial, sans-serif; color: #ffffff; text-decoration: underline; font-weight: bold;" href="{{ utilityLinkPrivacy }}">Privacy Policy</a></p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </td>
+  </tr>
+</table>
+
+<!-- ======= END TWO COLUMN (RIGHT TO LEFT STACK) ======= -->
+
+<!-- ======= START TWO COLUMN (LEFT TO RIGHT STACK) ======= -->
+
+<table role="presentation" cellpadding="0" cellspacing="0" width="100%" class="theme-bg-color">
+  <tr>
+    <td class="theme-bg-color" style="padding-top:10px; padding-bottom:30px; padding-right:0; padding-left:0; text-align:center; font-size:0;">
+      <!--[if (gte mso 9)|(IE)]>
+      <table role="presentation" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ededed; border-spacing:0;font-family: Calibri, sans-serif;color:#333333;" >
+      <tr>
+      <td width="50%" valign="middle" >
+      <![endif]-->
+      <div class="theme-bg-color two-column-1" style="padding: 10px 0">
+        <table role="presentation" cellpadding="0" cellspacing="0" width="100%" class="theme-bg-color"  style="border-spacing:0;">
+          <tr>
+            <td class="theme-bg-color" style="padding: 10px 28px;">
+              <p style="color: #5f5e5e; font-family: Calibri, Arial, sans-serif; font-size: 12px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height: 16px; margin: 0; text-align: center;">To stop receiving emails from the {{ organizationName }}, you can <a target="_blank" style="font-size: 12px; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; line-height:16px; font-family: Calibri, Arial, sans-serif; color: #5f5e5e; text-decoration: underline; font-weight: bold" href="{{ utilityLinkUnsubscribe }}">unsubscribe here</a>.
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td><td width="50%" valign="middle" >
+      <![endif]-->
+      <div class="two-column-2" style="padding: 10px 0">
+        <table role="presentation" align="center" valign="middle" cellpadding="0" cellspacing="0" width="180" style="border-spacing:0; max-width: 180;">
+          <tr>
+            <td width="50%" valign="middle" align="left" style="padding: 0;">
+              <img src="https://secure2.convio.net/gcfd/images/content/pagebuilder/feeding-america-member.png" width="93" alt="A member of Feeding America" style="max-width:93px; padding: 0; border: 0; display: block; color:#ffffff; font-size:24px; line-height:30px !important;" />
+            </td>
+            <td width="50%" valign="middle" align="right" style="padding: 0;">
+              <img src="https://secure2.convio.net/gcfd/images/content/pagebuilder/charity-navigator-bw.png" srcset="https://secure2.convio.net/gcfd/images/content/pagebuilder/charity-navigator-bw.png 1x, https://secure2.convio.net/gcfd/images/content/pagebuilder/charity-navigator-bw-2x.png 2x, https://secure2.convio.net/gcfd/images/content/pagebuilder/charity-navigator-bw-3x.png 3x" width="67" alt="Rated four-stars on Charity Navigator" style="max-width:67px; padding: 0; border: 0; display: block; color:#ffffff; font-size:24px; line-height:30px !important;" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </td>
+  </tr>
+</table>
+
+<!-- ======= END TWO COLUMN (CUSTOM 1) ======= -->                
+
+<!-- ======= END FOOTER ======= -->

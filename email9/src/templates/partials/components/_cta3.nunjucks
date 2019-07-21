@@ -1,0 +1,37 @@
+<!-- ======= START CTA - CTA3 - LIST ITEMS (ONE COLUMN) ======= -->
+
+{% if demo %}
+<h2 class="demo">CTA 3</h2>
+<p class="demo">This is a CTA that displays styled headings and list items with a subtle background color.</p>
+{% endif %}
+
+<table role="presentation" class="cta3" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="center">
+      <h1>{{ cta3H1 }}</h1>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="{{ ctaLink }}">
+        <img src="{{ ctaImage }}" width="100%" alt="{{ ctaAltText }}" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+<table role="presentation" align="center" cellpadding="0" cellspacing="0" border="0" width="100%" class="cta3">
+  <tr>
+    <td align="center" style="padding: 30px 20px; background: #ebebeb; background-color: #ebebeb">
+      <h2>{{ cta3H2 }}</h2>
+      <ul>
+        <li><strong>Healthy Kids Markets</strong> &mdash; Family food distributions located at schools</li>
+        <li><strong>Kids Cafe</strong> &mdash; Healthy meals for children in after-school programs</li>
+        <li><strong>Benefits Outreach for Veterans</strong> &mdash; Comprehensive information, application assistance and follow-up support for veterans eligible for SNAP.</li>
+        <li><strong>And so much more&#8230;</strong></li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<!-- ======= END CTA - CTA3 - LIST ITEMS (ONE COLUMN) ======= -->

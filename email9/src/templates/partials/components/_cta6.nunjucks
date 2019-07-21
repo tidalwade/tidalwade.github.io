@@ -1,0 +1,31 @@
+<!-- ================ START CTA BUTTON - CTA6 (BUTTON WITH BACKGROUND) ================ -->
+
+{% if demo %}
+<h2 class="demo">CTA 6</h2>
+<p class="demo">This can be combined with other CTAs for a cohesive background look.</p>
+{% endif %}
+
+<table role="presentation" align="center" width="100%" border="0" cellspacing="0" cellpadding="0" class="message-body message-body-cta cta6">
+  <tr>
+    <td align="center">
+      <!-- CTA Button -->
+      <table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center" class="cta-button">
+            <div>
+              <!--[if mso]>
+              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ messageBodyButtonLink }}" style="height:62px;v-text-anchor:middle;width:{{outlookButtonWidth}};" arcsize="20%" strokecolor="{{$message-body-cta-bg-color}}" fillcolor="{{$message-body-cta-bg-color}}">
+              <w:anchorlock/>
+              <center style="color:#ffffff;font-family:{{$cta-font}};font-size:{{$cta-font-size}}">{{ messageBodyButtonText }}</center>
+              </v:roundrect>
+              <![endif]-->
+              <a href="{{ messageBodyButtonLink }}">{{ messageBodyButtonText }}</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- ================ END CTA BUTTON - CTA6 (BUTTON WITH BACKGROUND) ================ -->

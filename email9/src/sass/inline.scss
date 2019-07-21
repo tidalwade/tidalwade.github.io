@@ -1,0 +1,1410 @@
+@import 'reset';
+@import 'variables';
+
+/*------------------------------------*\
+  CUSTOM STYLES
+\*------------------------------------*/
+
+.message-body-text h2.demo {
+	text-align: center;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+.message-body-text p.demo {
+	margin: 0 auto 10px;
+	text-align: center;
+	font-weight: normal;
+	font-style: italic;
+	color: #777;
+	max-width: 300px;
+	font-size: 90%;
+	line-height: 1.2;
+}
+
+.theme-bg-color {
+	background: $bg-color;
+	background-color: none;
+}
+
+.block {
+	display: block;
+}
+.no-border {
+	border: 0px !important;
+}
+.no-padding {
+	padding-top:0;
+	padding-bottom:0;
+	padding-right:0;
+	padding-left:0;
+}
+.wrapper {
+	min-width:100%;
+	width:100%;
+	table-layout:fixed;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+	background-color: none;
+	background: $bg-color;
+}
+.wrapping-table {
+	min-width:100%;
+	background-color: none;
+	background: $bg-color;
+}
+.webkit {
+	max-width: $max-email-width;
+	Margin:0 auto;
+	background: $bg-color;
+	background-color: none;
+}
+.outer {
+	border-spacing:0;
+	Margin:0 auto;
+	width:100%;
+	max-width: $max-email-width;
+	min-width:100%;
+	background: $body-bg-color;
+	background-color: none;
+}
+table.snippet {
+	min-width: 100%;
+	width: 100%;
+	max-width: $max-email-width;
+	background-color: none;
+	background: $bg-color;
+}
+.snippet td {
+	padding: 20px;
+}
+.snippet p {
+	color: $snippet-font-color;
+	font-family: $snippet-font;
+	font-size: $snippet-font-size;
+	line-height: $snippet-font-line-height;
+	margin: 0;
+	text-align: center;
+	max-width: 500px;
+}
+.snippet p a {
+	color: $message-body-font-link-color;
+	font-family: $snippet-font;
+	font-size: $snippet-font-size;
+	line-height: $snippet-font-line-height;
+	margin: 0;
+	text-align: center;
+	font-family: $message-body-font;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.header-bg-color {
+	background: $header-bg-color;
+	background-color: none;
+}
+
+/*------------------------------------*\
+	HEADER - ONE COLUMN
+\*------------------------------------*/
+
+.one-column.header td {
+	padding: 25px 0 20px;
+}
+
+.header {
+	td {
+		border-top: $header-border-top;
+		border-bottom: $header-border-bottom;
+	}
+}
+.header.logo {
+	width: 100%;
+	max-width: $header-logo-width;
+}
+
+/*------------------------------------*\
+	HEADER 3 - BACKGROUND (ONE COLUMN)
+\*------------------------------------*/
+
+.header {
+
+	.background {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-color:#ccd4e8;
+	}
+
+}
+
+/*------------------------------------*\
+	LOGO - TWO COLUMNS
+\*------------------------------------*/
+
+td.reset {
+	padding-top:0;
+	padding-bottom:0;
+	padding-right:0;
+	padding-left:0;
+	text-align:center;
+	font-size:0;
+}
+
+div.two-column-1,
+div.two-column-2 {
+	width:100%;
+	max-width: 300px;
+	display:inline-block;
+	vertical-align:middle;
+	direction:ltr;
+}
+.message-body div.two-column-1,
+.message-body div.two-column-2 {
+	max-width: $two-column-equal-width-max-width;
+}
+.hero-stack td.two-column-container {
+	padding: 0;
+}
+td.two-column-container {
+	width: 50%;
+	padding: 20px 0;
+}
+.two-column-container table {
+	background-color: none;
+	Margin: 0 auto;
+}
+.img-logo-width {
+	width: $header-logo-width;
+}
+.header-cta-button {
+	-moz-border-radius: $header-cta-radius;
+	-webkit-border-radius: $header-cta-radius;
+	border-radius: $header-cta-radius;
+	background-color: none;
+	background: $header-cta-bg-color;
+}
+.header-cta-button a {
+	padding: 15px 0;
+	width:220px;
+	display: block;
+	text-decoration: none;
+	border:0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: Calibri, Arial, sans-serif;
+	color: #ffffff;
+	background: $header-cta-bg-color;
+	border: 1px solid $header-cta-bg-color;
+	-moz-border-radius: $message-body-cta-radius;
+	-webkit-border-radius: $message-body-cta-radius;
+	border-radius: $message-body-cta-radius;
+	line-height:18px;
+	text-transform:none;
+	letter-spacing: 0;
+}
+
+.one-column {
+	max-width: $max-email-width;
+}
+.hero-desktop,
+.hero-desktop td,
+.footer-wave,
+.footer-wave td {
+	font-family: Arial, sans-serif;
+	color:#5f5e5e;
+	font-size: 12px;
+	text-align: center;
+	background-color: none;
+	background: $hero-bg-color;
+}
+.footer-wave,
+.footer-wave td {
+	background-color: none;
+	background: $footer-bg-color;
+}
+.footer-wave img,
+.hero-desktop img,
+.hero-mobile img {
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	border: none;
+}
+.cta-desktop {
+	font-family: Arial, sans-serif;
+	color:#5f5e5e;
+	font-size: 12px;
+	text-align: center;
+	background-color: none;
+	background: $body-bg-color;
+}
+// .cta-desktop td {
+// 	padding: $message-body-spacing-padding;
+// }
+.cta-desktop img,
+.cta-mobile img {
+	width: 314px;
+	max-width: 100%;
+}
+.cta-desktop.clock img {
+	width: 250px;
+}
+.cta-desktop.cta9 img {
+	width: 100%;
+	max-width: 370px;
+}
+.hero-mobile,
+.hero-mobile a, 
+.hero-mobile img {
+	display: none;
+}
+.hero-mobile a {
+	border: 0;
+	text-decoration: none;
+}
+table.message-body, table.message-body td {
+	background-color: none;
+	background: $body-bg-color;
+}
+.message-body {
+	background-color: none;
+	background: $body-bg-color;
+}
+.message-body-text table,
+.message-body-text p:not(.demo),
+.message-body-text ul,
+.message-body-text ol,
+.message-body-text h1,
+.message-body h2,
+.message-body-text h3 {
+
+	+ table:not(.signature):not(.cta2):not(.cta3 + .cta3):not(.cta6):not(.cta11 + .cta11),
+	+ p:not(.cta10):not(.cta12),
+	+ ul,
+	+ ol,
+	+ h1:not(.cta12),
+	+ h2,
+	+ h3 {
+		Margin-top: $message-body-spacing-padding-top-only;
+		Margin-bottom: 0;
+	}
+	
+}
+.message-body-text table:first-child,
+.message-body-text p:first-child,
+.message-body-text h1:first-child,
+.message-body h2:first-child,
+.message-body-text h3:first-child {
+	Margin-top: 0;
+}
+.message-body-padding {
+	padding: $message-body-padding;
+}
+.hero-desktop h1 {
+	Margin-top: 0;
+}
+.hero-desktop h1,
+.message-body-text h1 {
+	font-family: $h1-font;
+	font-size: 30px;
+	line-height: 34px;
+	color: $message-body-font-link-color;
+	font-weight: bold;
+	Margin: $message-body-spacing-padding;
+	text-transform: uppercase;
+	text-align: left;
+	padding: 0;
+	// letter-spacing: -2px;
+	// max-width: 380px;
+}
+.footer h2,
+.hero-desktop h2,
+.message-body-text h2 {
+	font-family: $h2-font;
+	font-size: 22px;
+	line-height: 26px;
+	color: $message-body-font-link-color;;
+	font-weight: normal;
+	Margin: $message-body-spacing-padding;
+	text-align: left;
+	padding: 0;
+}
+.hero-desktop h2 {
+	Margin-top: 5px;
+}
+.footer h2 {
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+	margin: 0;
+}
+.message-body-text,
+.hero-desktop p, 
+.message-body-text p {
+	font-family: $message-body-font;
+	color: $message-body-font-color;
+	font-size: $message-body-font-size;
+	line-height: $message-body-font-line-height;
+	text-align:left;
+	 -webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	word-break: break-word;
+}
+.message-body-text p {
+	padding: 0;
+	// Margin: $message-body-spacing-padding;
+	Margin: 0;
+}
+.message-body-text p.disclaimer {
+	font-size: 14px;
+	font-style: italic;
+	text-align: center;
+}
+.message-body-text ul,
+.message-body-text ol,
+.message-body-text li {
+	font-family: $message-body-font;
+	font-size: $message-body-font-size;
+	line-height: $message-body-font-line-height;
+	Margin: 40px 0 0 25px;
+	padding: 0;
+}
+.message-body-text li {
+	Margin: 0 0 10px 0;
+	padding: 0;
+}
+.message-body-text li:last-child {
+	Margin: 0;
+}
+.message-body-text p a {
+	font-family: $message-body-font;
+	color: $message-body-font-link-color;
+	font-size: $message-body-font-size;
+	line-height: $message-body-font-line-height;
+	font-weight: bold;
+	text-decoration: underline;
+}
+table.message-body-cta {
+	border: none;
+	// max-width: $two-column-equal-width-max-width;
+	background: #ffffff;
+	background-color: none;
+	// margin-top: -40px;
+}
+.message-body-cta td {
+	padding: $message-body-spacing-padding;
+}
+.two-column-1 .message-body-cta td,
+.two-column-2 .message-body-cta td {
+	padding: 15px 0 0;
+}
+.message-body-cta table td {
+	padding: 0;
+	background: $body-bg-color;
+	background-color: none;
+	-moz-border-radius: $message-body-cta-radius;
+	-webkit-border-radius: $message-body-cta-radius;
+	border-radius: $message-body-cta-radius;
+	// min-width: 300px;
+}
+.two-column-1 .message-body-cta table td,
+.two-column-2 .message-body-cta table td {
+	padding: 0;
+}
+// .cta1:not(:first-child) { 
+// 	margin-top: 15px !important;
+// }
+.message-body-cta a {
+	padding: 15px 24px;
+	display: block;
+	text-decoration: none;
+	border:0;
+	text-align: center;
+	font-weight: bold;
+	font-size: $cta-font-size;
+	font-family: $cta-font;
+	color: #ffffff;
+	background: $message-body-cta-bg-color;
+	background-color: none;
+	border: 1px solid $message-body-cta-bg-color;
+	-moz-border-radius: $message-body-cta-radius;
+	-webkit-border-radius: $message-body-cta-radius;
+	border-radius: $message-body-cta-radius;
+	line-height: 1.5;
+	text-transform: uppercase;
+	letter-spacing: 0;
+	// min-width: 300px;
+	mso-hide:all;
+}
+.footer h3,
+.message-body-text h3 {
+	font-family: $h3-font;
+	font-size: $message-body-font-size;
+	line-height: $message-body-font-line-height;
+	color: $message-body-font-link-color;
+	font-weight: bold;
+	Margin: $message-body-spacing-padding;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+
+// .full-width-image img {
+// 	width: 100%;
+// 	max-width: $max-email-width;
+// 	height: auto;
+// }
+// .inner {
+// 	padding: 10px;
+// }
+
+
+// p, ul, li {
+// 	font-size: 16px;
+// 	line-height: 24px;
+// 	Margin: 0;
+// 	margin-bottom: 30px;
+// }
+// p a {
+// 	color: #e87722;
+// 	text-decoration: underline;
+// 	font-weight: bold;
+// }
+.img-align-vertical img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*------------------------------------*\
+	SIGNATURE
+\*------------------------------------*/
+
+.signature td:first-child {
+	padding: $message-body-spacing-padding;
+	font-size: 16px;
+	line-height: 0px;
+	font-family: 'Avenir', Arial, sans-serif;
+	color: $message-body-font-color;
+}
+.signature td:last-child {
+	padding: 0 0 30px 10px;
+	font-size: 16px;
+	line-height: 0px;
+	font-family: 'Avenir', Arial, sans-serif;
+	color: $message-body-font-color;
+	width: 100%;
+}
+.signature td:last-child strong {
+	text-transform: uppercase;
+	padding-left: 10px;
+}
+.signature td:last-child span {
+	font-size: 12px;
+	padding-left: 10px;
+}
+.signature td:last-child img {
+	display: block;
+	max-width: 100%;
+	padding: 0 0 5px;
+}
+
+/*------------------------------------*\
+	SIGNATURE 2
+\*------------------------------------*/
+
+.signature.2 td:first-child {
+	padding: $message-body-spacing-padding;
+	font-size: 16px;
+	line-height: 0px;
+	font-family: 'Avenir', Arial, sans-serif;
+	color: $message-body-font-color;
+}
+.signature.2 td:last-child {
+	padding: 0 0 0 10px;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $message-body-font;
+	color: $message-body-font-color;
+	width: 100%;
+}
+.signature.2 td:first-child img {
+	width: 91px;
+}
+.signature.2 td:last-child strong {
+	text-transform: normal;
+	padding-left: 0;
+}
+.signature.2 td:last-child span {
+	font-size: inherit;
+	font-weight: bold;
+	padding-left: 0;
+}
+.signature.2 td:last-child img {
+	display: block;
+	max-width: 100%;
+	padding: 0 0 5px;
+}
+
+/*------------------------------------*\
+	SIGNATURE 3
+\*------------------------------------*/
+
+.signature.3 td:first-child {
+	padding: 0;
+}
+.signature.3 td:last-child img {
+	display: block;
+	max-width: 100%;
+	padding: 0;
+}
+
+/*------------------------------------*\
+	TWO COLUMN STACK
+\*------------------------------------*/
+
+div.two-column-stack {
+	direction: ltr;
+	display: inline-block;
+	max-width: 270px;
+	vertical-align: middle;
+	width: 100%;
+}
+div.two-column-stack:first-child {
+	padding: 0 0 10px;
+}
+div.two-column-stack:last-child {
+	padding: 0 0 10px;
+}
+
+/*------------------------------------*\
+	QUOTE 1
+\*------------------------------------*/
+
+.quote1 {
+
+	.two-column-2 td {
+		padding: 0 20px;
+		background: #ebebeb;
+		background-color: none;
+	}
+
+	.two-column-2 table {
+		height: 183px;
+		background: #ebebeb;
+		background-color: none;
+	}
+
+	h2 {
+		font-size: 20px;
+		line-height: 24px;
+		font-style: italic;
+	}
+
+	h3 {
+		font-size: 15px;
+		line-height: 19px;
+		color: #000000;
+		text-align: right;
+		font-weight: bold;
+		margin: 0;
+		max-width: 370px;
+	}
+
+	p {
+		Margin: 0;
+		text-align: right;
+		font-family: $h3-font;
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: normal;
+	}
+
+	img {
+		width: 100%;
+		max-width: $two-column-equal-width-max-width;
+	}
+
+	td.message-body-spacing-padding {
+		padding: 0;
+		text-align: center;
+		font-size: 0;
+	}
+
+}
+
+/*------------------------------------*\
+	HEADER 5
+\*------------------------------------*/
+
+.header.5 {
+	
+	.hero-desktop,
+	.hero-desktop td {
+		background: none;
+		padding: 40px 25px 40px;
+	}
+
+	div table,
+	div td {
+		background: none;
+	}
+
+	.hero-desktop img {
+		width: 100%;
+		max-width: 50%;
+	}
+
+}
+
+/*------------------------------------*\
+	HEADER 6
+\*------------------------------------*/
+
+.header6 {
+	
+	.hero-desktop,
+	.hero-desktop td {
+		background: none;
+		padding: 40px 25px 40px;
+	}
+
+}
+
+/*------------------------------------*\
+	HEADER 9
+\*------------------------------------*/
+
+.header.9 td.two-column-container:first-child {
+	width: 50%;
+	padding: 20px 0 20px 25px;
+}
+.header.9 td.two-column-container:last-child {
+	width: 50%;
+	padding: 20px 25px 20px 0;
+}
+.header.9 .two-column-container table {
+	background-color: none;
+	Margin: 0 auto;
+}
+.header.9 .img-logo-width {
+	width: $header-logo-width;
+}
+.header.9 td.two-column-container:last-child .img-logo-width {
+	width: $header-logo-width-2;
+}
+
+/*------------------------------------*\
+	CTA 3
+\*------------------------------------*/
+
+table.message-body .cta3 {
+	
+	h1 {
+		font-size: 21px;
+		line-height: 20px;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bold;
+		margin: 0;
+		background-color: none;
+		padding: 15px 0;
+	}
+
+	h2 {
+		font-size: 21px;
+		line-height: 24px; 
+		text-align: center;
+		font-weight: bold;
+		margin: 0 0 30px;
+		text-transform: normal;
+		padding: 0;
+		max-width: 320px;
+	}
+
+	td {
+		background: $message-body-cta-bg-color;
+		background-color: none;
+	}
+
+	ul {
+		font-size: 18px;
+		line-height: 22px;
+		max-width: 420px;
+		text-align: left; 
+		padding-bottom: 0;
+	}
+
+}
+
+/*------------------------------------*\
+	CTA 4 & 11 - IMAGE STACK - TWO COLUMNS
+\*------------------------------------*/
+
+.message-body .cta-image-stack {
+	
+	td.two-column-container {
+		padding: 0;
+	}
+	.two-column-1,
+	.two-column-2 {
+		max-width: $two-column-equal-width-max-width;
+	}
+	
+}
+
+/*------------------------------------*\
+	CTA 5 - UNEQUAL COLUMNS
+\*------------------------------------*/
+
+.message-body .cta5.cta-image-stack {
+	
+	td.two-column-container {
+		padding: 0;
+	}
+	div.two-column-1 {
+		max-width: 205px;
+	}
+	div.two-column-1 img {
+		max-width: 191px;
+		margin: 0 auto;
+	}
+	div.two-column-2 {
+		max-width: 245px;
+	}
+	p {
+		font-family: $cta-font;
+		color: #1f5430;
+		font-weight: bold;
+		margin: 15px 0 5px;
+		text-align: center;
+		font-size: 18px;
+		line-height: 18px;
+	}
+	p:first-child {
+		margin: 0 0 5px;
+	}
+	p strong {
+		font-family: $cta-font;
+		color: #e87722;
+		font-size: 30px;
+		line-height: 30px;
+	}
+	
+}
+
+.message-body .cta5.cta-image-stack td.cta5-padding {
+	padding: 20px 0;
+	text-align: center;
+}
+
+/*------------------------------------*\
+	CTA 4 & CTA 5 - BACKGROUND COLOR
+\*------------------------------------*/
+
+.message-body table.cta-image-stack {
+	background: $bg-color;
+	background-color: none;
+}
+.message-body .cta-image-stack {
+	
+	td {
+		background: $bg-color;
+		background-color: none;
+	}
+	
+}
+
+/*------------------------------------*\
+	CTA 6 - BUTTON W/ BACKGROUND
+\*------------------------------------*/
+
+table.cta6,
+table.cta12 {
+	// background: $bg-color;
+	background: $header-bg-color;
+	background-color: none;
+	max-width: 100%;
+}
+
+table.cta12 {
+	background: $bg-color;
+}
+
+table.cta6,
+table.cta12 {
+	
+	td:not(.cta-button) {
+		// background: $bg-color;
+		background: $header-bg-color;
+		background-color: none;
+		padding: 30px 0;
+	}
+
+}
+
+table.cta12 {
+	
+	td:not(.cta-button) {
+		background: $bg-color;
+		// background: $header-bg-color;
+		background-color: none;
+		padding: 15px 25px 30px;
+	}
+	td.border-top {
+		border-top: 6px solid $header-bg-color;
+	}
+	p, h1 {
+		text-align: center;
+		margin: 0;
+		font-size: 26px;
+	}
+	p {
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		font-size: 18px;
+		color: $message-body-font-link-color;
+	}
+
+}
+
+/*------------------------------------*\
+	CTA 7 - FULL WIDTH BUTTON
+\*------------------------------------*/
+
+.cta7,
+.cta8 {
+
+	width: 100%;
+	Margin: $message-body-spacing-padding;
+
+	table,
+	table td {
+		background: $message-body-cta-bg-color !important;
+		background-color: none;
+		border-radius: $message-body-cta-radius;
+		vertical-align: middle;
+	}
+
+	table td {
+		padding: 15px;
+	}
+
+	a {
+		vertical-align: middle;
+		display: block;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: $cta-font-size;
+		font-family: $cta-font;
+		color: #ffffff;
+		background: $message-body-cta-bg-color;
+		background-color: none;
+	}
+
+}
+
+/*------------------------------------*\
+	CTA 8 - BUTTON W/ ICON
+\*------------------------------------*/
+
+.cta8 {
+
+	a {
+		display: inline-block;
+	}
+
+	table td:first-child {
+		padding: 12px 5px 12px 30px;
+		border-top-left-radius: $message-body-cta-radius;
+		border-bottom-left-radius: $message-body-cta-radius;
+	}
+	table td:last-child {
+		font-size: 0;
+		padding: 12px 30px 12px 5px;
+		border-top-right-radius: $message-body-cta-radius;
+		border-bottom-right-radius: $message-body-cta-radius;
+	}
+
+}
+
+/*------------------------------------*\
+	CTA 10 - BUTTON W/ USERNAME & LINK
+\*------------------------------------*/
+
+.message-body-text p.cta10 {
+
+	font-size: $message-body-font-size;
+	color: $message-body-font-link-color;
+	line-height: 1.2;
+	text-align: center;
+	font-weight: bold;
+	Margin-top: 10px;
+
+	a {
+		display: inline;
+		line-height: 1.2;
+	}
+
+}
+
+/*------------------------------------*\
+	CTA 11 - PARTICIPANT DASHBOARD
+\*------------------------------------*/
+
+.message-body .cta11.cta-image-stack {
+
+	background: $body-bg-color;
+	background-color: none;
+	border: 2px solid $footer-bg-color;
+	
+	table,
+	td {
+		background: $body-bg-color;
+		background-color: none;
+	}
+
+	td.two-column-container {
+		padding: 20px 10px;
+	}
+
+	.two-column-1,
+	.two-column-2 {
+		max-width: 270px;
+	}
+
+}
+
+table.message-body .cta11 {
+	
+	h1 {
+		font-size: 21px;
+		line-height: 20px;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bold;
+		margin: 0;
+		background-color: none;
+		padding: 15px 0;
+	}
+
+	td {
+		background: $footer-bg-color;
+		background-color: none;
+	}
+
+	p {
+		font-size: $message-body-font-size;
+		color: $message-body-font-link-color;
+		line-height: 1.4;
+		// text-align: center;
+		font-weight: normal;
+		// Margin-top: 10px;
+	}
+
+	a {
+		line-height: 1.4;
+	}
+
+}
+
+.message-body .cta11.cta-image-stack td.cta11-padding {
+	padding: 20px 0;
+	text-align: center;
+}
+
+
+
+/*------------------------------------*\
+	FOOTER
+\*------------------------------------*/
+
+.footer {
+
+	background-color: none;
+	background: $footer-bg-color;
+
+	table,
+	td {
+		background-color: none;
+		background: $footer-bg-color;
+	}
+
+	.footer-padding {
+		padding: 10px 0;
+	}
+
+}
+
+.one-column.footer-padding {
+	padding: 10px 0;
+	text-align: center;
+	font-size: 0;
+}
+
+/*------------------------------------*\
+	FOOTER UTILITY LINKS
+\*------------------------------------*/
+
+.footer-utility-links {
+
+	table,
+	td {
+		background: $footer-utility-links-bg-color;
+		background-color: none;
+		text-align: center;
+		min-width: 100%;
+	}
+
+	td {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-right: 0;
+		padding-left: 0;
+		text-align: center;
+	}
+	
+	a {
+		// font-size: 11px;
+		// line-height: 18px;
+		// font-weight: bold;
+		// color: #303c51;
+		font-size: $footer-utility-links-font-size;
+		line-height: $footer-utility-links-line-height;
+		font-weight: bold;
+		color: $message-body-font-link-color;
+		font-family: $message-body-font;
+		// text-decoration: none;	
+	}
+
+	a span {
+		color: $message-body-font-link-color;
+	}
+
+}
+
+td.footer-utility-links {
+	padding: 15px 25px;
+}
+
+.img-footer-logo-width {
+	width: 100%;
+	max-width: $footer-logo-width;
+}
+
+/*------------------------------------*\
+	FOOTER - SOCIAL MEDIA
+\*------------------------------------*/
+
+.social-media {
+	
+	table {
+		width: 140px;
+	}
+	table td {
+		padding: 15px 10px 15px 0;
+		text-align: center;
+	}
+	table td:last-child {
+		padding: 15px 0 15px 0;
+	}
+	img {
+		width: 31px;
+		height: 31px;
+	}
+
+}
+
+/*------------------------------------*\
+	FOOTER 1
+\*------------------------------------*/
+
+// .footer.1,
+// .footer.1 table,
+// .footer.1 td {
+// 	background-color: none;
+// 	background: $body-bg-color;
+// }
+
+/*------------------------------------*\
+FOOTER 2 - SOCIAL MEDIA
+\*------------------------------------*/
+
+.footer.2 .social-media {
+	
+	td {
+		padding-top:10px;
+		padding-bottom:10px;
+		padding-right:15px;
+		padding-left:0;
+		text-align:center;
+		vertical-align: middle;
+	}
+	
+	img {
+		width: 31px;
+		height: 31px;
+	}
+	
+}
+
+/*------------------------------------*\
+	FOOTER 3 - SOCIAL MEDIA
+\*------------------------------------*/
+
+.footer.3 .social-media {
+	
+	table {
+		width: 166px;
+	}
+	td {
+		padding-top:0;
+		padding-bottom:0;
+		padding-right:15px;
+		padding-left:0;
+		text-align:center;
+		vertical-align: middle;
+	}
+	td:last-child {
+		padding-right: 0;
+	}
+
+}
+
+/*------------------------------------*\
+	FOOTER 4 & 5 - ADDRESS
+\*------------------------------------*/
+
+.footer.address {
+
+	td {
+		padding: 12px 25px;
+		// text-align: center;
+	}
+
+	tr:last-child td {
+		padding-top: 0;
+		padding-bottom: 20px;
+	}
+
+	span,
+	a {
+		font-size: 11px;
+		line-height: 13px;
+		color: #ffffff;
+		font-family: $message-body-font;
+		text-transform: none;
+		font-weight: bold;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+/*------------------------------------*\
+	FOOTER 4 - MULTI COLORED
+\*------------------------------------*/
+
+.footer.4 {
+
+	background: $body-bg-color;
+	
+	table, td {
+		background: $body-bg-color;
+		background-color: none;
+
+	}
+
+}
+
+.footer.4.address {
+
+	table, td {
+		background: $footer-bg-color;
+		background-color: none;
+		border-bottom: $footer-4-border;
+		text-align: center;
+	}
+
+	span, a {
+		font-weight: normal;
+	}
+
+	tr:last-child td {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+}
+
+.footer.4.footer-utility-links {
+
+	table, td {
+		background: $footer-utility-links-bg-color;
+		background-color: none;
+	}
+
+	a {
+		font-weight: normal;
+	}
+
+	span {
+	// font-size: 11px;
+	// line-height: 18px;
+	// font-weight: bold;
+	// color: #303c51;
+	font-size: $footer-utility-links-font-size;
+	line-height: $footer-utility-links-line-height;
+	font-weight: bold;
+	color: $message-body-font-link-color;
+	font-family: $message-body-font;
+	// text-decoration: none;
+	}
+
+}
+
+/*------------------------------------*\
+	FOOTER 5 - MULTI COLORED
+\*------------------------------------*/
+
+.footer.5 {
+	
+	table, td {
+		background: $footer-bg-color;
+		background-color: none;
+
+	}
+
+}
+
+.footer.5.h2 {
+
+	td {
+		padding: 12px 0;
+	}
+	
+}
+.footer.5.h2.hashtag {
+
+	td {
+		padding: 15px 0 12px;
+	}
+
+	h2 {
+		font-weight: normal;
+	}
+
+	h2 span {
+		color: #359a8e;
+	}
+	
+}
+
+.footer.5.blurb {
+
+	background: #369a8e;
+	background-color: none;
+
+	table,
+	td {
+		background: #369a8e;
+		background-color: none;
+	}
+
+	td {	
+		padding: 5px 0 20px;
+	}
+
+	span, 
+	a {
+		font-size: 110%;
+		line-height: 1.2;
+		text-decoration: none;
+		color: #ffffff;
+		font-family: $message-body-font;
+		text-transform: none;
+		font-weight: bold;
+	}
+
+	h2,
+	h3 {
+		font-size: 60px;
+		line-height: 1.2;
+		display: inline-block;
+		color: #ffffff;
+		font-weight: bold;
+	}
+
+	h2 {
+		text-align: right;
+	}
+
+	h2 span {
+		color: #490563;
+	}
+
+	h3 {
+		font-size: 24px;
+		text-align: left;
+		Margin: 0;
+	}
+	
+	p {
+		font-family: $message-body-font;
+		font-size: 120%;
+		color: #ffffff;
+		text-align: center;
+		max-width: 80%;
+		Margin: 0;
+	}
+
+}
+
+.footer.5.social-media {
+	
+	table td {
+		padding: 0 10px 0 0;
+		text-align: center;
+	}
+	table td:last-child {
+		padding: 0;
+	}
+
+}
+
+.footer.5.address {
+
+	table, td {
+		background: $footer-5-darker-bg-color;
+		background-color: none;
+		border-bottom: none;
+	}
+
+}
+
+.footer.5.footer-utility-links {
+
+	table, td {
+		background: $footer-utility-links-bg-color;
+		background-color: none;
+		padding-top: 10px;
+		padding-bottom: 12px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	span {
+	// font-size: 11px;
+	// line-height: 18px;
+	// font-weight: bold;
+	// color: #303c51;
+	font-size: $footer-utility-links-font-size;
+	line-height: $footer-utility-links-line-height;
+	font-weight: bold;
+	color: $message-body-font-link-color;
+	font-family: $message-body-font;
+	// text-decoration: none;
+	}
+
+}

@@ -1,0 +1,29 @@
+{
+  "name": "gulp-email-workflow",
+  "description": "A workflow for building HTML email using Gulp",
+  "version": "1.0.0",
+  "author": "Ire Aderinokun",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ireade/gulp-email-workflow"
+  },
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^3.2.2",
+    "gulp-data": "^1.2.1",
+    "gulp-inline-css": "^3.1.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-util": "^3.0.7",
+    "gulp-zip": "^3.2.0",
+    "postcss-scss": "^0.1.7"
+  },
+  "scripts": {
+    "start": "gulp",
+    "zip": "gulp zip"
+  }
+}

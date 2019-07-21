@@ -1,0 +1,50 @@
+<!-- ======= START QUOTE 1 (TWO COLUMN) ======= -->
+
+{% if demo %}
+<h2 class="demo">QUOTE 1</h2>
+<p class="demo">This is a quote style with two columns that stacks.</p>
+{% endif %}
+
+<table role="presentation" dir="ltr" cellpadding="0" cellspacing="0" border="0" width="100%" class="quote1">
+  <tr>
+    <td class="message-body-spacing-padding">
+      <!--[if (gte mso 9)|(IE)]>
+      <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="500" align="center" style="background-color: #ededed; border-spacing:0;font-family: Calibri, sans-serif;color:#333333;" >
+      <tr>
+      <td width="250" valign="middle" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      <div class="two-column-1 message-body">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" align="center">
+          <tr>
+            <td>
+              <a href="{{ quoteLink }}" style="border: 0; display: block; text-decoration: none;">
+                <img src="{{ quoteImage }}" alt="{{ quoteAltText }}" />
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td><td width="250" height="280" valign="middle" style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+      <![endif]-->
+      <div class="two-column-2 message-body">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="message-bg-color">
+          <tr>
+            <td>
+              <h2>&ldquo;{{ quotePullQuote }}&rdquo;</h2>
+              <h3>&mdash; {{ quoteName }}</h3>
+              <p>{{ quoteTitle }},<br>{{ organizationName }}</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <!--[if (gte mso 9)|(IE)]>
+      </td>
+      </tr>
+      </table>
+      <![endif]-->
+    </td>
+  </tr>
+</table>
+
+<!-- ======= END QUOTE 1 (TWO COLUMN) ======= -->
