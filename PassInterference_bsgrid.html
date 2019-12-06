@@ -1,103 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pass Interference Game</title>
-	<link rel="stylesheet" type="text/css" href="PassInterference.css">
-	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Poppins:400,500,700" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>FSFB Survey API</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <style>
+      /* example site styles */
+      body {
+        padding-top: 40px;
+      }
+    </style>
+    
+    <!--[if lt IE 9]>
+      <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+      <link href="//netdna.bootstrapcdn.com/respond-proxy.html" id="respond-proxy" rel="respond-proxy">
+      <link href="js/respond.proxy.gif" id="respond-redirect" rel="respond-redirect">
+      <script src="js/respond.proxy.js"></script>
+    <![endif]-->
+    <!--[if gte IE 9]><!-->
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+    <!--<![endif]-->
 </head>
 <body>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-sm-3 rowHeight" id="leftRow">
-			<h1 class="sideValue mobileMoney" id ="money">$ 100</h1>
-		</div>
-		<div class="col-sm-6 middleRow">
-			<div id="startPage">
-				<br />
-				<br />
-				<h1 id="gameTitle">Pass Interference</h1>
-				<br />
-				<button type="button" class="btn btn-primary btn-lg" id ="startGame">Start Game</button>
-				<div id="startText">
-					<br />
-					<i class="fas fa-plus-square fa-lg" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="rules"></i>
-					<h1>RULES</h1>
-					<div class="collapse" id="collapseExample">
-						<ul>
-							<li>Decode your mark's password</li>
-							<li>Run up their credit card and earn $</li>
-							<li>Beat the clock and out run the feds</li>
-						</ul>
-					</div>
-					<i class="fas fa-plus-square fa-lg" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2" id="rules"></i>
-					<h1>Tips</h1>
-					<div class="collapse" id="collapseExample2">
-						<ul>
-							<li>Stuck on a clue? Press "+" & buy a tile</li>
-							<li>The clock speeds up and down based off correct and incorrect answers</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<!-- <button type="buttod-md-none n" class="btn btn-primary btn-lg" id = "moneyDrop">$ Drop</button> -->
-			<br />
-			<br />
-			<!-- <h1 id="tile" class="textWord">Password Game</h1> -->
-			<h2 id="clue" class="textWord"></h2>
-			<br />
-			<form id="formID">
-				<i class="fas fa-plus-square fa-3x" id = "moneyDrop"></i>
-			    <div id="divId">
-			      <input type="text" style="text-transform:uppercase" name="name" id="tile1" class="arrow-togglable tileClass" placeholder="" alt="alt1"/>
-			      <input type="text" style="text-transform:uppercase" name="name" id="tile2" class="arrow-togglable tileClass" placeholder="" alt="alt2"/>
-			      <input type="text" style="text-transform:uppercase" name="name" id="tile3" class="arrow-togglable tileClass" placeholder="" alt="alt3"/>
-			      <input type="text" style="text-transform:uppercase" name="name" id="tile4" class="arrow-togglable tileClass" placeholder="" alt="alt4"/>
-			      <input type="text" style="text-transform:uppercase" name="name" id="tile5" class="arrow-togglable tileClass" placeholder="" alt="alt5"/>
-			      <input type="text" style="text-transform:uppercase" name="name" id="tile6" class="arrow-togglable tileClass" placeholder="" alt="alt6"/>
-			    </div>
-			</form>
-			<form id="formID2">
-				<!-- <i class="fas fa-dollar-sign"></i> -->
-				<div id="divId2" class="divClass">
-					<input type="text" style="text-transform:uppercase" name="name" id="money1"  class="tileClassTwo" placeholder="$" alt="alt1"/>
-				    <input type="text" style="text-transform:uppercase" name="name" id="money2"  class="tileClassTwo" placeholder="$" alt="alt2"/>
-				    <input type="text" style="text-transform:uppercase" name="name" id="money3"  class="tileClassTwo" placeholder="$" alt="alt3"/>
-				    <input type="text" style="text-transform:uppercase" name="name" id="money4"  class="tileClassTwo" placeholder="$" alt="alt4"/>
-				    <input type="text" style="text-transform:uppercase" name="name" id="money5"  class="tileClassTwo" placeholder="$" alt="alt5"/>
-				    <input type="text" style="text-transform:uppercase" name="name" id="money6"  class="tileClassTwo" placeholder="$" alt="alt6"/>
-		        </div>
-			</form>
-			<h1 class="mobileMoney" id="money">$ 100</h1>
-			<h1 class="timeClass mobileCount">0:00</h1>
-			<!-- <h1 id="timer"></h1>
-			<h1 id ="money">$ 100</h1> -->
-			<h1 id ="funds">INNSUFFICENT FUNDS!!!</h1>
-			<button id = "nextGame">Next Game</button>
-			<br />
-			<br />
-			<h1 id ="correct">Correct Answer!!!</h1>
-			<br />
-			<button type="button" class="btn btn-primary btn-md" id ="continue" class="newGame">Continue?</button>
-		</div>
-		<div class="col-sm-3 rowHeight" id="rightRow">
-			<h1 class="sideValue timeClass" id="timer">0:00</h1>
-		</div>
-	</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/luminateExtend/1.8.3/luminateExtend.min.js"></script>
+<div id="survey1">
+      <form class="luminateApi survey-form" method="POST" action="https://secure3.convio.net/fsfb/site/CRSurveyAPI" data-luminateApi='{"callback": "submitSurveyCallback", "requiresAuth": "true"}'>
+        <input type="hidden" name="method" value="submitSurvey">
+        <input type="hidden" name="survey_id" value="2901">
+<div class="appArea"></div>
+<div class="appArea">
+
+<div class="form-group">
+<div class="alert alert-info">
+Be among the first to hear about our upcoming volunteer
+opportunities and the latest happenings around the Freestore Foodbank.
 </div>
-<div class="lightbox">
-    <div class="modal-copy">
- 		<h1>Out of Time!!!</h1>
-        <button type="button" class="btn btn-primary btn-md" id ="restart" class="newGame">Restart Game</button>
-        <button type="button" class="btn btn-primary btn-md" id ="skip" class="newGame">Skip Game</button>
-    </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script type="text/javascript" src="PassInterference.js"></script>
-</body>
+<div class="form-group">
+<label for="survey-cons-first-name">First Name:</label>
+<input id="survey-cons-first-name" maxlength="50" name="cons_first_name" size="15" type="text" value="" class="form-control"/>
+</div>
+
+<div class="form-group">
+<label for="survey-cons-last-name">Last Name:</label>
+<input id="survey-cons-last-name" maxlength="50" name="cons_last_name" size="15" type="text" value=""class="control-label"/>
+</div>
+
+<div class="form-group">
+<label for="survey-cons-email">Email:</label>
+<input id="csurvey-cons-email" maxlength="255" name="cons_email" size="15" type="email" value="" class="control-label"/>
+</div>
+
+<input type="hidden" name="cons_email_opt_in" value="true">
+
+<div class="appArea">
+<div style="display: none;"><label for="denySubmit">Spam Control Text:</label>
+<input id="denySubmit" alt="This field is used to prevent form submission by scripts." name="denySubmit" type="text" value="" /> Please leave this field empty</div>
+<div class="appArea">
+
+<input id="ACTION_SUBMIT_SURVEY_RESPONSE" class="Button" formtarget="_blank" name="ACTION_SUBMIT_SURVEY_RESPONSE" type="submit" value="SIGN UP" />
+
+</div>
+
+</div>
+</div>
+</form>
+</div>
+<script type="text/javascript" src="luminate-extend-file.js"></script>
+  </body>
 </html>
