@@ -12,7 +12,7 @@
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "gulp": "^3.9.1",
-    "gulp-connect": "^3.2.2",
+    "gulp-connect": "^5.7.0",
     "gulp-data": "^1.2.1",
     "gulp-inline-css": "^3.1.0",
     "gulp-nunjucks-render": "^2.0.0",
